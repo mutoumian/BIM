@@ -44,8 +44,7 @@ import java.util.*;
  * to sound file names without the extension. For example:<br/>
  * BUSY=busy (points to /res/raw/busy.wav)<br/>
  * <br/>
- * Images - images work the same as sounds except they are stored in drawable
- * folders.<br/>
+ * Images - images work the same as sounds except they are stored in drawable folders.<br/>
  * <br/>
  * For parts of Jitsi source that directly refere to image paths it will map
  * the requests to the drawable Android application resource names, so that we
@@ -62,6 +61,7 @@ import java.util.*;
  * @author Pawel Domas
  */
 public class AndroidResourceServiceImpl extends AbstractResourcesService {
+
     /**
      * The <tt>Logger</tt> used by the <tt>AndroidResourceServiceImpl</tt>
      * class and its instances for logging output.
@@ -73,6 +73,7 @@ public class AndroidResourceServiceImpl extends AbstractResourcesService {
      * translations to android drawable resources
      */
     private static final String IMAGE_PATH_RESOURCE = "resources.images.image_path";
+
     /**
      * Android image path translation resource
      * TODO: Remove direct path requests for resources
@@ -161,8 +162,7 @@ public class AndroidResourceServiceImpl extends AbstractResourcesService {
     }
 
     /**
-     * Returns the string representation of the color corresponding to the
-     * given key.
+     * Returns the string representation of the color corresponding to the given key.
      *
      * @param key The key of the color in the colors properties file.
      * @return the string representation of the color corresponding to the
@@ -214,7 +214,7 @@ public class AndroidResourceServiceImpl extends AbstractResourcesService {
 
             if (logger.isTraceEnabled()) logger.trace("Translated path: " + translatedPath);
 
-            if (translatedPath != null) {
+            if (!translatedPath.equals("")) {
                 return getImageInputStream(translatedPath);
             }
         }
