@@ -11,8 +11,10 @@ android {
         versionCode 1
         versionName "1.0"
 
-        /*ndk {
+       /*ndk {
             moduleName "jnawtrenderer"
+            ldLibs "GLESv3", "EGL", "OpenSLES", "log", "z", "m"
+
         }*/
 
         // Enabling multidex support.
@@ -29,8 +31,9 @@ android {
         }
     }
 
-    dexOptions{
+    dexOptions {
         javaMaxHeapSize "2g"
+        incremental true
     }
 
     packagingOptions {
@@ -38,6 +41,10 @@ android {
         exclude 'META-INF/NOTICE.txt'
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 }
 
 dependencies {
