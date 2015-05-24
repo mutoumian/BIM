@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="fill_parent"
-             android:layout_height="@dimen/contact_list_row_height"
-             android:descendantFocusability="blocksDescendants"
-             android:background="@color/white">
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/contact_list_row_height"
+                android:descendantFocusability="blocksDescendants"
+                android:background="@color/white">
 
     <RelativeLayout
-            android:id="@+id/avatarLayout"
-            android:layout_height="fill_parent"
-            android:layout_width="@dimen/contact_list_avatar_width"
-            android:padding="5dp"
-            android:layout_marginBottom="1dp"
-            android:layout_marginLeft="5dp">
+        android:id="@+id/avatarLayout"
+        android:layout_height="fill_parent"
+        android:layout_width="@dimen/contact_list_avatar_width"
+        android:padding="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp">
+
         <ImageView
             android:id="@+id/avatarIcon"
             android:layout_height="fill_parent"
@@ -20,6 +21,7 @@
             android:layout_centerVertical="true"
             android:src="@drawable/avatar"
             />
+
         <ImageView
             android:id="@+id/contactStatusIcon"
             android:layout_height="20dip"
@@ -38,7 +40,7 @@
         android:layout_marginLeft="8dip"
         android:layout_marginRight="8dip"
         android:layout_toLeftOf="@+id/callButtonLayout"
-            >
+        >
 
         <TextView
             android:id="@+id/displayName"

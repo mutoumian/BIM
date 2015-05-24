@@ -47,8 +47,16 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile(name:'jitsi-release', ext:'aar')
     compile 'com.android.support:appcompat-v7:22.1.1'
     compile 'com.android.support:multidex:1.0.0'
 }

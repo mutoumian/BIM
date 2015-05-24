@@ -30,16 +30,28 @@ public class StunTurnDialogFragment extends DialogFragment {
     /**
      * Parent adapter that will be notified about any changes to the descriptor
      */
-    private final StunServerAdapter parentAdapter;
+    private StunServerAdapter parentAdapter;
+
+    /*public StunTurnDialogFragment(StunServerAdapter parentAdapter, StunServerDescriptor descriptior) {
+        if (parentAdapter == null) throw new NullPointerException();
+
+        this.parentAdapter = parentAdapter;
+        this.descriptor = descriptior;
+    }*/
 
     /**
      * Creates new instance of {@link StunTurnDialogFragment}
      *
-     * @param parentAdapter the parent adapter
-     * @param descriptior   the descriptor to edit or <tt>null</tt> if new one
-     *                      shall be created
+     * @param args parentAdapter the parent adapter
+     *              descriptior   the descriptor to edit or <tt>null</tt> if new one shall be created
      */
-    public StunTurnDialogFragment(StunServerAdapter parentAdapter, StunServerDescriptor descriptior) {
+    @Override
+    public void setArguments(Bundle args) {
+        super.setArguments(args);
+
+        StunServerAdapter parentAdapter = (StunServerAdapter) args.getSerializable("");
+        StunServerDescriptor descriptior = (StunServerDescriptor) args.getSerializable("");
+
         if (parentAdapter == null) throw new NullPointerException();
 
         this.parentAdapter = parentAdapter;
@@ -131,7 +143,7 @@ public class StunTurnDialogFragment extends DialogFragment {
 
         String portStr = ((TextView) dialog.findViewById(R.id.serverPort)).getText().toString();
         if (portStr.isEmpty()) {
-            Toast toast = Toast.makeText(getActivity(), "The port can not be empty", 3);
+            Toast toast = Toast.makeText(getActivity(), "The port can not be empty", Toast.LENGTH_LONG);
             toast.show();
             return false;
         }

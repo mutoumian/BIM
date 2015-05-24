@@ -7,11 +7,14 @@
 package org.jitsi.android.gui.account.settings;
 
 import android.app.*;
+import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
 
 import net.java.sip.communicator.service.protocol.*;
 import net.java.sip.communicator.service.protocol.jabber.*;
+
+import java.io.Serializable;
 
 /**
  * List model for STUN servers. Is used to edit STUN servers preferences of
@@ -89,7 +92,17 @@ public class StunServerAdapter extends ServerItemAdapter {
     }
 
     DialogFragment createItemEditDialogFragment(int position) {
-        if (position < 0) return new StunTurnDialogFragment(this, null);
-        else return new StunTurnDialogFragment(this, (StunServerDescriptor) getItem(position));
+        if (position < 0)
+            return new StunTurnDialogFragment();
+        else{
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("", (Serializable) this);
+            bundle.putSerializable("", (StunServerDescriptor) getItem(position));
+
+            StunTurnDialogFragment stunTurnDialogFragment = new StunTurnDialogFragment();
+            stunTurnDialogFragment.setArguments(bundle);
+
+            return stunTurnDialogFragment;
+        }
     }
 }

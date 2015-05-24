@@ -7,11 +7,14 @@
 package org.jitsi.android.gui.account.settings;
 
 import android.app.*;
+import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
 
 import net.java.sip.communicator.service.protocol.*;
 import net.java.sip.communicator.service.protocol.jabber.*;
+
+import java.io.Serializable;
 
 /**
  * Implements list model for Jingle Nodes list of
@@ -52,9 +55,16 @@ public class JingleNodeAdapter extends ServerItemAdapter {
      * @return the Jingle Node edit dialog
      */
     DialogFragment createItemEditDialogFragment(int position) {
-        if (position < 0) return new JingleNodeDialogFragment(this, null);
+        if (position < 0) return new JingleNodeDialogFragment();
 
-        return new JingleNodeDialogFragment(this, (JingleNodeDescriptor) getItem(position));
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("", (Serializable) this);
+        bundle.putSerializable("", (JingleNodeDescriptor) getItem(position));
+
+        JingleNodeDialogFragment jingleNodeDialogFragment = new JingleNodeDialogFragment();
+        jingleNodeDialogFragment.setArguments(bundle);
+
+        return jingleNodeDialogFragment;
     }
 
     public View getView(int i, View view, ViewGroup viewGroup) {

@@ -6,7 +6,8 @@
               android:layout_height="wrap_content">
 
     <SeekBar
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/seekBar" android:padding="25dp"/>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:padding="25dp"/>
 </LinearLayout>

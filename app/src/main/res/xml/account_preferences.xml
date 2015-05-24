@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-            android:title="Jitsi Preferences" />
+        android:title="Jitsi Preferences"/>
 
     <PreferenceScreen
         android:key="general_settings"
@@ -13,7 +13,7 @@
         <intent
             android:action="org.jitsi.android.gui.account.AccountPreferencesActivity.ACCOUNT_SETUP"
             android:targetPackage="org.jitsi"
-            android:targetClass="org.jitsi.android.gui.account.AccountPreferencesActivity" />
+            android:targetClass="org.jitsi.android.gui.account.AccountPreferencesActivity"/>
     </PreferenceScreen>
 
     <PreferenceScreen
@@ -24,7 +24,7 @@
         <intent
             android:action="org.jitsi.android.gui.account.AccountPreferencesActivity.ACCOUNT_SETUP"
             android:targetPackage="org.jitsi"
-            android:targetClass="org.jitsi.android.gui.account.AccountPreferencesActivity" />
+            android:targetClass="org.jitsi.android.gui.account.AccountPreferencesActivity"/>
     </PreferenceScreen>
 
 </PreferenceScreen>

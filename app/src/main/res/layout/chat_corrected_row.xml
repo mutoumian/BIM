@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-             android:descendantFocusability="blocksDescendants">
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
 
     <RelativeLayout
-            android:id="@+id/outgoingAvatarView"
-            android:layout_height="@dimen/chat_avatar"
-            android:layout_width="@dimen/chat_avatar"
-            android:layout_marginRight="5dip"
-            android:layout_alignParentRight="true">
+        android:id="@+id/outgoingAvatarView"
+        android:layout_height="@dimen/chat_avatar"
+        android:layout_width="@dimen/chat_avatar"
+        android:layout_marginRight="5dip"
+        android:layout_alignParentRight="true">
+
         <ImageView
             android:id="@+id/outgoingAvatarIcon"
             android:layout_height="fill_parent"
@@ -17,6 +18,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="1px"
             android:src="@drawable/avatar"/>
+
         <ImageView
             android:id="@+id/outgoingStatusIcon"
             android:layout_height="18dip"
@@ -33,6 +35,7 @@
         android:orientation="vertical"
         android:layout_toLeftOf="@+id/outgoingAvatarView"
         android:background="@drawable/messageholder_correction">
+
         <TextView
             android:id="@+id/outgoingMessageView"
             style="@style/MediumFont"
@@ -42,6 +45,7 @@
             android:gravity="right"
             android:layout_marginRight="@dimen/chat_text_margin"
             android:padding="7dip"/>
+
         <TextView
             android:id="@+id/outgoingTimeView"
             style="@style/SmallFont"
@@ -56,12 +60,12 @@
     </LinearLayout>
 
     <ImageView
-            android:id="@+id/messageArrowView"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/chat_arrow_height"
-            android:layout_marginTop="@dimen/chat_arrow_top"
-            android:src="@drawable/messagearrowout_correction"
-            android:layout_toRightOf="@+id/outgoingMessageHolder"
-            android:layout_marginLeft="-6dp"/>
+        android:id="@+id/messageArrowView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chat_arrow_height"
+        android:layout_marginTop="@dimen/chat_arrow_top"
+        android:src="@drawable/messagearrowout_correction"
+        android:layout_toRightOf="@+id/outgoingMessageHolder"
+        android:layout_marginLeft="-6dp"/>
 
 </RelativeLayout>

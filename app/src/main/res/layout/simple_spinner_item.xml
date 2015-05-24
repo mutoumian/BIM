@@ -7,4 +7,4 @@
           android:layout_height="wrap_content"
           android:ellipsize="marquee"
           style="@style/SpinnerItem"
-        />
+    />

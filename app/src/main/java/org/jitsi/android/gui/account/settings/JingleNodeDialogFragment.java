@@ -23,7 +23,7 @@ import org.jitsi.*;
  *
  * @author Pawel Domas
  */
-class JingleNodeDialogFragment extends DialogFragment {
+public class JingleNodeDialogFragment extends DialogFragment {
     /**
      * Edited Jingle Node descriptor
      */
@@ -33,16 +33,29 @@ class JingleNodeDialogFragment extends DialogFragment {
      * Parent {@link JingleNodeAdapter} that will be notified about any change
      * to the Jingle Node
      */
-    private final JingleNodeAdapter listener;
+    //private final JingleNodeAdapter listener;
+    private JingleNodeAdapter listener;
+
+    /*public JingleNodeDialogFragment(JingleNodeAdapter listener, JingleNodeDescriptor descriptor) {
+        if (listener == null) throw new NullPointerException();
+        this.listener = listener;
+        this.descriptor = descriptor;
+    }*/
 
     /**
      * Creates new instance of {@link JingleNodeDialogFragment}
      *
-     * @param listener   parent {@link JingleNodeAdapter}
-     * @param descriptor the {@link JingleNodeDescriptor} to edit or
+     * @param args listener   parent {@link JingleNodeAdapter}
+     * @param args descriptor the {@link JingleNodeDescriptor} to edit or
      *                   <tt>null</tt> if a new node shall be created
      */
-    public JingleNodeDialogFragment(JingleNodeAdapter listener, JingleNodeDescriptor descriptor) {
+    @Override
+    public void setArguments(Bundle args) {
+        super.setArguments(args);
+
+        JingleNodeAdapter listener = (JingleNodeAdapter) args.getSerializable("listener");
+        JingleNodeDescriptor descriptor = (JingleNodeDescriptor) args.getSerializable("descriptor");
+
         if (listener == null) throw new NullPointerException();
 
         this.listener = listener;
@@ -107,7 +120,7 @@ class JingleNodeDialogFragment extends DialogFragment {
         String jidAddress = ((TextView) dialog.findViewById(R.id.jidAddress)).getText().toString();
 
         if (jidAddress.isEmpty()) {
-            Toast toast = Toast.makeText(getActivity(), "The JID address can not be empty", 3);
+            Toast toast = Toast.makeText(getActivity(), "The JID address can not be empty", Toast.LENGTH_LONG);
             toast.show();
             return false;
         }

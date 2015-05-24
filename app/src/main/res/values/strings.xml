@@ -419,16 +419,16 @@
         You need to be connected in in order to add a contact.
         Please sign in to the selected provider and try again.
     </string>
-    <string name="service_gui_ADD_CONTACT_ERROR" >
+    <string name="service_gui_ADD_CONTACT_ERROR">
         Failed to add contact with id: %s
     </string>
-    <string name="service_gui_ADD_CONTACT_EXIST_ERROR" >
+    <string name="service_gui_ADD_CONTACT_EXIST_ERROR">
         The contact %s already exists in your contact list.
     </string>
-    <string name="service_gui_ADD_CONTACT_NETWORK_ERROR" >
+    <string name="service_gui_ADD_CONTACT_NETWORK_ERROR">
         Server did not respond to our request adding contact with id: %s.
     </string>
-    <string name="service_gui_ADD_CONTACT_NOT_SUPPORTED" >
+    <string name="service_gui_ADD_CONTACT_NOT_SUPPORTED">
         Failed to add contact with id: %s. Operation not supported.
     </string>
     <string name="service_gui_CONTACT_NAME">ID or Number</string>
@@ -651,18 +651,18 @@
     <string name="service_gui_STUN_EDIT_TURN_USER">TURN username</string>
     <string name="service_gui_STUN_EDIT_PASSWORD">Password</string>
     <!-- Security preferences -->
-    <string name="service_gui_PREF_SECURITY_GENERAL" >General</string>
-    <string name="service_gui_PREF_SECURITY_ENCRYPTION" >
+    <string name="service_gui_PREF_SECURITY_GENERAL">General</string>
+    <string name="service_gui_PREF_SECURITY_ENCRYPTION">
         Communication encryption
     </string>
-    <string name="service_gui_PREF_SECURITY_ENC_PROTOCOLS" >
+    <string name="service_gui_PREF_SECURITY_ENC_PROTOCOLS">
         Encryption protocols
     </string>
-    <string name="service_gui_PREF_SECURITY_ZRTP" >ZRTP options</string>
-    <string name="service_gui_PREF_SECURITY_ZRTP_SIGNALING" >
+    <string name="service_gui_PREF_SECURITY_ZRTP">ZRTP options</string>
+    <string name="service_gui_PREF_SECURITY_ZRTP_SIGNALING">
         ZRTP signaling
     </string>
-    <string name="service_gui_PREF_SECURITY_SDES" >SDes options</string>
+    <string name="service_gui_PREF_SECURITY_SDES">SDes options</string>
     <string name="service_gui_PREF_SECURITY_SDES_TITLE">
         SDES cipher suites
     </string>
@@ -676,150 +676,150 @@
         RTP/SAVP indication method
     </string>
     <!-- SIP preferences -->
-    <string name="service_gui_SIP_GENERAL" >User name and password</string>
-    <string name="service_gui_SIP_USER" >User id</string>
-    <string name="service_gui_SIP_PASSWORD" >Enter password</string>
-    <string name="service_gui_SIP_STORE_PASS" >Remember password</string>
-    <string name="service_gui_SIP_DISPLAYNAME" >Displayname</string>
-    <string name="service_gui_SIP_ADVANCED" >Advanced</string>
-    <string name="service_gui_SIP_CONNECTION" >Connection</string>
-    <string name="service_gui_SIP_CONNECTION_DESC" >
+    <string name="service_gui_SIP_GENERAL">User name and password</string>
+    <string name="service_gui_SIP_USER">User id</string>
+    <string name="service_gui_SIP_PASSWORD">Enter password</string>
+    <string name="service_gui_SIP_STORE_PASS">Remember password</string>
+    <string name="service_gui_SIP_DISPLAYNAME">Displayname</string>
+    <string name="service_gui_SIP_ADVANCED">Advanced</string>
+    <string name="service_gui_SIP_CONNECTION">Connection</string>
+    <string name="service_gui_SIP_CONNECTION_DESC">
         Set connection details...
     </string>
-    <string name="service_gui_SIP_CONN_GENERAL" >General</string>
-    <string name="service_gui_SIP_REGISTRAR" >Registrar</string>
-    <string name="service_gui_SIP_PORT" >Server port</string>
-    <string name="service_gui_SIP_AUTH_NAME" >Authorization name</string>
-    <string name="service_gui_SIP_TLS_CERT" >Client TLS certificate</string>
-    <string name="service_gui_SIP_TLS_CERT_PROMPT" >
+    <string name="service_gui_SIP_CONN_GENERAL">General</string>
+    <string name="service_gui_SIP_REGISTRAR">Registrar</string>
+    <string name="service_gui_SIP_PORT">Server port</string>
+    <string name="service_gui_SIP_AUTH_NAME">Authorization name</string>
+    <string name="service_gui_SIP_TLS_CERT">Client TLS certificate</string>
+    <string name="service_gui_SIP_TLS_CERT_PROMPT">
         Please select TLS certificate
     </string>
-    <string name="service_gui_SIP_DTMF" >DTMF method</string>
-    <string name="service_gui_SIP_DTMF_TITLE" >DTMF method selection</string>
-    <string name="service_gui_SIP_PROXY" >Proxy options</string>
-    <string name="service_gui_SIP_PROXY_AUTO" >Configure proxy automatically</string>
-    <string name="service_gui_SIP_PROXY_ADDR" >Proxy address</string>
-    <string name="service_gui_SIP_PROXY_PORT" >Proxy port</string>
-    <string name="service_gui_SIP_PREF_TRANSPORT" >Preferred transport</string>
-    <string name="service_gui_SIP_PREF_TRANS_TITLE" >Proxy preferred transport selection</string>
-    <string name="service_gui_SIP_KEEP_ALIVE_CAT" >Keep alive</string>
-    <string name="service_gui_SIP_KEEP_ALIVE" >Keep alive method</string>
-    <string name="service_gui_SIP_KEEP_ALIVE_TITLE" >
+    <string name="service_gui_SIP_DTMF">DTMF method</string>
+    <string name="service_gui_SIP_DTMF_TITLE">DTMF method selection</string>
+    <string name="service_gui_SIP_PROXY">Proxy options</string>
+    <string name="service_gui_SIP_PROXY_AUTO">Configure proxy automatically</string>
+    <string name="service_gui_SIP_PROXY_ADDR">Proxy address</string>
+    <string name="service_gui_SIP_PROXY_PORT">Proxy port</string>
+    <string name="service_gui_SIP_PREF_TRANSPORT">Preferred transport</string>
+    <string name="service_gui_SIP_PREF_TRANS_TITLE">Proxy preferred transport selection</string>
+    <string name="service_gui_SIP_KEEP_ALIVE_CAT">Keep alive</string>
+    <string name="service_gui_SIP_KEEP_ALIVE">Keep alive method</string>
+    <string name="service_gui_SIP_KEEP_ALIVE_TITLE">
         Keep alive method selection
     </string>
-    <string name="service_gui_SIP_KEEP_ALIVE_INT" >Keep alive interval</string>
-    <string name="service_gui_SIP_VOICEMAIL" >Voicemail</string>
-    <string name="service_gui_SIP_WMI" >Message Waiting (MWI)</string>
-    <string name="service_gui_SIP_VMAIL_URI" >Voicemail Subscription URI</string>
-    <string name="service_gui_SIP_VMAIL_CHECK_URI" >Voicemail check URI</string>
-    <string name="service_gui_SIP_PRESENCE" >Presence</string>
-    <string name="service_gui_SIP_PRESENCE_DESC" >
+    <string name="service_gui_SIP_KEEP_ALIVE_INT">Keep alive interval</string>
+    <string name="service_gui_SIP_VOICEMAIL">Voicemail</string>
+    <string name="service_gui_SIP_WMI">Message Waiting (MWI)</string>
+    <string name="service_gui_SIP_VMAIL_URI">Voicemail Subscription URI</string>
+    <string name="service_gui_SIP_VMAIL_CHECK_URI">Voicemail check URI</string>
+    <string name="service_gui_SIP_PRESENCE">Presence</string>
+    <string name="service_gui_SIP_PRESENCE_DESC">
         Configure presence options...
     </string>
-    <string name="service_gui_SIP_PRESENCE_OPTIONS" >Presence Options</string>
-    <string name="service_gui_SIP_ENABLE_SIMPLE" >
+    <string name="service_gui_SIP_PRESENCE_OPTIONS">Presence Options</string>
+    <string name="service_gui_SIP_ENABLE_SIMPLE">
         Enable presence (SIMPLE)
     </string>
-    <string name="service_gui_SIP_FORCE_P2P" >
+    <string name="service_gui_SIP_FORCE_P2P">
         Force peer-to-peer presence mode
     </string>
-    <string name="service_gui_SIP_CONTACTS_POLLING" >
+    <string name="service_gui_SIP_CONTACTS_POLLING">
         Offline contacts polling period(in s.)
     </string>
-    <string name="service_gui_SIP_SUBSCRIPTION_DUR" >
+    <string name="service_gui_SIP_SUBSCRIPTION_DUR">
         Default subscription duration(in s.)
     </string>
-    <string name="service_gui_SIP_CONTACTLIST_OPTIONS" >
+    <string name="service_gui_SIP_CONTACTLIST_OPTIONS">
         Contactlist Options
     </string>
-    <string name="service_gui_SIP_CLIST_TYPE" >Type</string>
-    <string name="service_gui_SIP_CLIST_TYPE_DLG_TITLE" >
+    <string name="service_gui_SIP_CLIST_TYPE">Type</string>
+    <string name="service_gui_SIP_CLIST_TYPE_DLG_TITLE">
         Contact list type selection
     </string>
-    <string name="service_gui_SIP_CLIST_URI" >
+    <string name="service_gui_SIP_CLIST_URI">
         Contactlist server URI/Address
     </string>
-    <string name="service_gui_SIP_CLIST_SIP_CREDENTIALS" >
+    <string name="service_gui_SIP_CLIST_SIP_CREDENTIALS">
         Use SIP credentials
     </string>
-    <string name="service_gui_SIP_CLIST_USER" >User</string>
-    <string name="service_gui_SIP_CLIST_PASS" >Password</string>
+    <string name="service_gui_SIP_CLIST_USER">User</string>
+    <string name="service_gui_SIP_CLIST_PASS">Password</string>
     <!-- Common preferences -->
-    <string name="service_gui_PREF_AUDIO_ENCODING" >Audio encoding</string>
-    <string name="service_gui_PREF_AUDIO_ENC_SUMMARY" >
+    <string name="service_gui_PREF_AUDIO_ENCODING">Audio encoding</string>
+    <string name="service_gui_PREF_AUDIO_ENC_SUMMARY">
         Select audio formats
     </string>
-    <string name="service_gui_PREF_VIDEO_ENCODING" >Video encoding</string>
-    <string name="service_gui_PREF_VIDEO_ENC_SUMMARY" >
+    <string name="service_gui_PREF_VIDEO_ENCODING">Video encoding</string>
+    <string name="service_gui_PREF_VIDEO_ENC_SUMMARY">
         Select video formats
     </string>
-    <string name="service_gui_PREF_ENCRYPTION" >Encryption settings</string>
+    <string name="service_gui_PREF_ENCRYPTION">Encryption settings</string>
     <!-- Jabber preferences -->
-    <string name="service_gui_JBR_USER_CATEGORY" >User name and password</string>
-    <string name="service_gui_JBR_USER" >User id</string>
-    <string name="service_gui_JBR_PASSWORD" >Enter password</string>
-    <string name="service_gui_JBR_STORE_PASSWORD" >Remember password</string>
-    <string name="service_gui_JBR_ADVANCED" >Advanced</string>
-    <string name="service_gui_JBR_CONNECTION" >Connection</string>
-    <string name="service_gui_JBR_CONN_SUMMARY" >
+    <string name="service_gui_JBR_USER_CATEGORY">User name and password</string>
+    <string name="service_gui_JBR_USER">User id</string>
+    <string name="service_gui_JBR_PASSWORD">Enter password</string>
+    <string name="service_gui_JBR_STORE_PASSWORD">Remember password</string>
+    <string name="service_gui_JBR_ADVANCED">Advanced</string>
+    <string name="service_gui_JBR_CONNECTION">Connection</string>
+    <string name="service_gui_JBR_CONN_SUMMARY">
         Set connection details...
     </string>
-    <string name="service_gui_JBR_CONN_GENERAL" >General</string>
-    <string name="service_gui_JBR_GMAIL_NOTIFICATIONS" >
+    <string name="service_gui_JBR_CONN_GENERAL">General</string>
+    <string name="service_gui_JBR_GMAIL_NOTIFICATIONS">
         Gmail notifications for new messages
     </string>
-    <string name="service_gui_JBR_GOOGLE_CONTACTS_SEARCH" >
+    <string name="service_gui_JBR_GOOGLE_CONTACTS_SEARCH">
         Google Contacts search
     </string>
-    <string name="service_gui_JBR_ALLOW_NON_SECURE" >
+    <string name="service_gui_JBR_ALLOW_NON_SECURE">
         Allow non-secure connections
     </string>
-    <string name="service_gui_JBR_DTMF_METHOD" >DTMF method</string>
-    <string name="service_gui_JBR_DTMF_SUMMARY" >DTMF method selection</string>
-    <string name="service_gui_JBR_SERVER_OPTIONS" >Server options</string>
-    <string name="service_gui_JBR_OVERRIDE_SERVER" >
+    <string name="service_gui_JBR_DTMF_METHOD">DTMF method</string>
+    <string name="service_gui_JBR_DTMF_SUMMARY">DTMF method selection</string>
+    <string name="service_gui_JBR_SERVER_OPTIONS">Server options</string>
+    <string name="service_gui_JBR_OVERRIDE_SERVER">
         Override server default options
     </string>
-    <string name="service_gui_JBR_SERVER" >Connect Server</string>
-    <string name="service_gui_JBR_PORT" >Port</string>
-    <string name="service_gui_JBR_RESOURCE" >Resource</string>
-    <string name="service_gui_JBR_RES_AUTO_GEN" >Auto generate resource</string>
-    <string name="service_gui_JBR_RESURCE_NAME" >Resource name</string>
-    <string name="service_gui_JBR_PRIORITY" >Priority</string>
-    <string name="service_gui_JBR_ICE" >ICE</string>
-    <string name="service_gui_JBR_ICE_SUMMARY" >
+    <string name="service_gui_JBR_SERVER">Connect Server</string>
+    <string name="service_gui_JBR_PORT">Port</string>
+    <string name="service_gui_JBR_RESOURCE">Resource</string>
+    <string name="service_gui_JBR_RES_AUTO_GEN">Auto generate resource</string>
+    <string name="service_gui_JBR_RESURCE_NAME">Resource name</string>
+    <string name="service_gui_JBR_PRIORITY">Priority</string>
+    <string name="service_gui_JBR_ICE">ICE</string>
+    <string name="service_gui_JBR_ICE_SUMMARY">
         Configure ICE options...
     </string>
-    <string name="service_gui_JBR_ICE_GENERAL" >General</string>
-    <string name="service_gui_JBR_USE_ICE" >Use ICE</string>
-    <string name="service_gui_JBR_USE_GOOGLE_ICE" >
+    <string name="service_gui_JBR_ICE_GENERAL">General</string>
+    <string name="service_gui_JBR_USE_ICE">Use ICE</string>
+    <string name="service_gui_JBR_USE_GOOGLE_ICE">
         Use Google\'s Jingle/ICE(experimental)
     </string>
-    <string name="service_gui_JBR_USE_UPNP" >Use UPnP</string>
-    <string name="service_gui_JBR_AUTO_STUN_DICOVERY" >
+    <string name="service_gui_JBR_USE_UPNP">Use UPnP</string>
+    <string name="service_gui_JBR_AUTO_STUN_DICOVERY">
         Auto discover STUN/TURN servers
     </string>
-    <string name="service_gui_JBR_USE_DEFAULT_STUN" >
+    <string name="service_gui_JBR_USE_DEFAULT_STUN">
         Use Jitsi\'s STUN server in case no other servers are available
     </string>
-    <string name="service_gui_JBR_STUN_LIST" >
+    <string name="service_gui_JBR_STUN_LIST">
         Additional STUN/TURN servers
     </string>
-    <string name="service_gui_JBR_JINGLE_NODES" >Jingle Nodes</string>
-    <string name="service_gui_JBR_JINGLE_SUMMARY" >Use jingle nodes</string>
-    <string name="service_gui_JBR_JINGLE_AUTO" >
+    <string name="service_gui_JBR_JINGLE_NODES">Jingle Nodes</string>
+    <string name="service_gui_JBR_JINGLE_SUMMARY">Use jingle nodes</string>
+    <string name="service_gui_JBR_JINGLE_AUTO">
         Auto discover Jingle Nodes relays
     </string>
-    <string name="service_gui_JBR_JINGLE_LIST" >Additional Jingle Nodes</string>
-    <string name="service_gui_JBR_TELEPHONY" >Telephony</string>
-    <string name="service_gui_JBR_TELEPHONY_SUMMARY" >
+    <string name="service_gui_JBR_JINGLE_LIST">Additional Jingle Nodes</string>
+    <string name="service_gui_JBR_TELEPHONY">Telephony</string>
+    <string name="service_gui_JBR_TELEPHONY_SUMMARY">
         Configure telephony options...
     </string>
-    <string name="service_gui_JBR_DISABLE_JINGLE" >
+    <string name="service_gui_JBR_DISABLE_JINGLE">
         Disable Jingle (audio and video calls with XMPP)
     </string>
-    <string name="service_gui_JBR_TELE_DOMAIN" >Telephony domain</string>
-    <string name="service_gui_JBR_GTALK_DOMAIN" >
+    <string name="service_gui_JBR_TELE_DOMAIN">Telephony domain</string>
+    <string name="service_gui_JBR_GTALK_DOMAIN">
         Domain that will use GTalk call
     </string>
 
@@ -888,28 +888,28 @@
     <!-- Not present int SIP, but new in XMPP -->
     <string name="pref_key_gmail_notifications">pref_key_gmail_notifications</string>
     <string name="pref_key_google_contact_enabled">pref_key_google_contact_enabled</string>
-    <string name="pref_key_allow_non_secure_conn" >pref_key_allow_non_secure_conn</string>
-    <string name="pref_key_auto_gen_resource" >pref_key_auto_gen_resource</string>
-    <string name="pref_key_resource_name" >pref_key_resource_name</string>
-    <string name="pref_key_resource_priority" >pref_key_resource_priority</string>
+    <string name="pref_key_allow_non_secure_conn">pref_key_allow_non_secure_conn</string>
+    <string name="pref_key_auto_gen_resource">pref_key_auto_gen_resource</string>
+    <string name="pref_key_resource_name">pref_key_resource_name</string>
+    <string name="pref_key_resource_priority">pref_key_resource_priority</string>
     <!-- XMPP ICE -->
-    <string name="pref_key_ice_enabled" >pref_key_ice_enabled</string>
-    <string name="pref_key_google_ice_enabled" >pref_key_google_ice_enabled</string>
-    <string name="pref_key_upnp_enabled" >pref_key_upnp_enabled</string>
-    <string name="pref_key_auto_discover_jingle" >pref_key_auto_discover_jingle</string>
-    <string name="pref_key_use_default_stun" >pref_key_use_default_stun</string>
+    <string name="pref_key_ice_enabled">pref_key_ice_enabled</string>
+    <string name="pref_key_google_ice_enabled">pref_key_google_ice_enabled</string>
+    <string name="pref_key_upnp_enabled">pref_key_upnp_enabled</string>
+    <string name="pref_key_auto_discover_jingle">pref_key_auto_discover_jingle</string>
+    <string name="pref_key_use_default_stun">pref_key_use_default_stun</string>
 
-    <string name="pref_key_stun_turn_servers" >pref_key_stun_turn_servers</string>
+    <string name="pref_key_stun_turn_servers">pref_key_stun_turn_servers</string>
 
-    <string name="pref_key_use_jingle_nodes" >pref_key_use_jingle_nodes</string>
-    <string name="pref_key_auto_relay_dicovery" >pref_key_auto_relay_dicovery</string>
+    <string name="pref_key_use_jingle_nodes">pref_key_use_jingle_nodes</string>
+    <string name="pref_key_auto_relay_dicovery">pref_key_auto_relay_dicovery</string>
 
-    <string name="pref_key_jingle_node_list" >pref_key_jingle_node_list</string>
+    <string name="pref_key_jingle_node_list">pref_key_jingle_node_list</string>
 
     <!-- XMPP telephony -->
-    <string name="pref_key_calling_disabled" >pref_key_calling_disabled</string>
-    <string name="pref_key_override_phone_suffix" >pref_key_override_phone_suffix</string>
-    <string name="pref_key_tele_bypass_gtalk_caps" >pref_key_tele_bypass_gtalk_caps</string>
+    <string name="pref_key_calling_disabled">pref_key_calling_disabled</string>
+    <string name="pref_key_override_phone_suffix">pref_key_override_phone_suffix</string>
+    <string name="pref_key_tele_bypass_gtalk_caps">pref_key_tele_bypass_gtalk_caps</string>
     <!-- Security preferences -->
     <string name="pref_cat_security_general">pref.cat.security.general</string>
     <string name="pref_cat_security_zrtp">pref.cat.security.zrtp</string>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/white">
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white">
 
     <RelativeLayout
-            android:id="@+id/callSearchLayout"
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:visibility="invisible">
+        android:id="@+id/callSearchLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:visibility="invisible">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -50,7 +50,7 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:clickable="true">
-    
+
             <ImageView
                 android:id="@+id/buttonSeparatorView"
                 android:src="@drawable/contact_list_v_separator"
@@ -58,7 +58,7 @@
                 android:layout_height="40dip"
                 android:layout_marginRight="15dp"
                 android:layout_gravity="center_vertical"/>
-    
+
             <ImageButton
                 android:id="@+id/contactCallButton"
                 android:src="@drawable/call"

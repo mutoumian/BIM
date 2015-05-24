@@ -6,17 +6,20 @@
               android:layout_height="match_parent"
               android:gravity="center_vertical"
               android:padding="@dimen/screen_padding"
-        >
+    >
+
     <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressBar"
-            android:indeterminate="true"
-            />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        />
+
     <TextView
-            style="@style/MediumFont"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="[Ongoing action...]"
-            android:id="@+id/textView" android:paddingLeft="10dp"/>
+        style="@style/MediumFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Ongoing action...]"
+        android:id="@+id/textView"
+        android:paddingLeft="10dp"/>
 </LinearLayout>
