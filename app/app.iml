@@ -70,9 +70,9 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex-cache" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/jitsi-release/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -90,50 +90,14 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="contactlist" level="project" />
-    <orderEntry type="library" exported="" name="replacement" level="project" />
-    <orderEntry type="library" exported="" name="netaddr" level="project" />
-    <orderEntry type="library" exported="" name="dnsservice" level="project" />
-    <orderEntry type="library" exported="" name="resourcemanager" level="project" />
-    <orderEntry type="library" exported="" name="credentialsstorage" level="project" />
-    <orderEntry type="library" exported="" name="callhistory" level="project" />
-    <orderEntry type="library" exported="" name="httpclient" level="project" />
-    <orderEntry type="library" exported="" name="multidex-1.0.1" level="project" />
-    <orderEntry type="library" exported="" name="contactsource" level="project" />
-    <orderEntry type="library" exported="" name="smack-sasl" level="project" />
-    <orderEntry type="library" exported="" name="jitsi-release-" level="project" />
-    <orderEntry type="library" exported="" name="systray-service" level="project" />
-    <orderEntry type="library" exported="" name="zrtp4j" level="project" />
-    <orderEntry type="library" exported="" name="certificate" level="project" />
-    <orderEntry type="library" exported="" name="globaldisplaydetails" level="project" />
-    <orderEntry type="library" exported="" name="muc" level="project" />
-    <orderEntry type="library" exported="" name="browserlauncher" level="project" />
-    <orderEntry type="library" exported="" name="msghistory" level="project" />
-    <orderEntry type="library" exported="" name="libjitsi" level="project" />
-    <orderEntry type="library" exported="" name="plugin-loggingutils" level="project" />
-    <orderEntry type="library" exported="" name="otr" level="project" />
-    <orderEntry type="library" exported="" name="bccontrib" level="project" />
-    <orderEntry type="library" exported="" name="protocol" level="project" />
-    <orderEntry type="library" exported="" name="updateservice" level="project" />
-    <orderEntry type="library" exported="" name="notification-wiring" level="project" />
-    <orderEntry type="library" exported="" name="ui-service" level="project" />
-    <orderEntry type="library" exported="" name="metahistory" level="project" />
-    <orderEntry type="library" exported="" name="sdes4j" level="project" />
-    <orderEntry type="library" exported="" name="log4j-1.2.8" level="project" />
-    <orderEntry type="library" exported="" name="sysactivitynotifications" level="project" />
-    <orderEntry type="library" exported="" name="httputil" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-22.1.1" level="project" />
+    <orderEntry type="library" exported="" name="cardview-v7-22.0.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.1.1" level="project" />
-    <orderEntry type="library" exported="" name="notification-service" level="project" />
-    <orderEntry type="library" exported="" name="history" level="project" />
-    <orderEntry type="library" exported="" name="httpcore" level="project" />
-    <orderEntry type="library" exported="" name="defaultresources" level="project" />
-    <orderEntry type="library" exported="" name="java-stubs" level="project" />
-    <orderEntry type="library" exported="" name="commons-codec" level="project" />
-    <orderEntry type="library" exported="" name="osgi.core" level="project" />
-    <orderEntry type="library" exported="" name="filehistory" level="project" />
-    <orderEntry type="library" exported="" name="bouncycastle" level="project" />
+    <orderEntry type="library" exported="" name="kenburnsview-1.0.6" level="project" />
+    <orderEntry type="library" exported="" name="multidex-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.5.2" level="project" />
+    <orderEntry type="library" exported="" name="library-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.1.1" level="project" />
-    <orderEntry type="library" exported="" name="util" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-22.1.1" level="project" />
+    <orderEntry type="module" module-name="materialviewpager" exported="" />
   </component>
 </module>
