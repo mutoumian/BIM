@@ -1,1 +1,1 @@
-include ':app', ':jitsi'
+include ':app', ':jitsi', ':materialviewpager'
