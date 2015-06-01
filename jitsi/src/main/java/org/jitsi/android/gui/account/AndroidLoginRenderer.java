@@ -240,7 +240,7 @@ public class AndroidLoginRenderer implements LoginRenderer {
             return;
         }
 
-        AndroidUtils.updateGeneralNotification(JitsiApplication.getGlobalContext(), notificationID, JitsiApplication.getResString(R.string.app_name), status, System.currentTimeMillis());
+        AndroidUtils.updateGeneralNotification(JitsiApplication.getGlobalContext(), notificationID, JitsiApplication.getResString(R.string.module_name), status, System.currentTimeMillis());
     }
 
     /**

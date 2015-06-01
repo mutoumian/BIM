@@ -67,7 +67,9 @@ public class LauncherActivity extends OSGiActivity {
         setContentView(R.layout.main);
 
         // Starts fade in animation
-        ImageView myImageView = (ImageView) findViewById(R.id.loadingImage);
+        //ImageView myImageView = (ImageView) findViewById(R.id.loadingImage);
+
+        TextView myImageView = (TextView) findViewById(R.id.loadingImage);
         Animation myFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         myImageView.startAnimation(myFadeInAnimation);
 

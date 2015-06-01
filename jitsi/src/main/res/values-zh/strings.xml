@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">博图纵横即时通讯</string>
+    <!--<string name="app_name">博图纵横即时通讯</string>-->
+    <string name="system_title">博图纵横即时通讯</string>
     <string name="ACCOUNT_TYPE">org.jitsi.android.account</string>
     <string name="send_process_signal">Send Process Signal</string>
     <string name="stop_osgi_framework">Stop OSGi Framework</string>
     <string name="in_call_with">In call with </string>
     <string name="settings">设置</string>
-    <string name="username_hint">username@example.com</string>
+    <string name="username_hint">用户名</string>
     <string name="username_label">用户名:</string>
     <string name="password">密码</string>
     <string name="password_label">密码:</string>
@@ -24,6 +25,7 @@
     </string-array>
     <string name="enter_name_or_number">Enter name or number</string>
     <string name="hang_up">Hang up call</string>
+    <string name="reversal_camera">切换前后摄像头</string>
     <string name="accept_call_video">Answer call with video</string>
     <string name="hold">Put call on hold</string>
     <string name="show_call_info">Call info</string>
@@ -80,51 +82,35 @@
     <string name="service_gui_IGNORE">Ignore</string>
     <string name="service_gui_INFO">Info</string>
     <string name="service_gui_LAST_MSG_CORRECTION">Last message correction</string>
-    <string name="service_gui_NOT_AUTHORIZED">Not authorized</string>
+    <string name="service_gui_NOT_AUTHORIZED">未经授权</string>
     <string name="service_gui_OUTGOING_CALL">Outgoing call</string>
     <string name="service_gui_OUTGOING_CALL_MSG">Connecting with %s…</string>
     <string name="service_gui_TYPE_YOUR_REQUEST">Type your request here</string>
-    <string name="service_gui_REQUEST">Request</string>
-    <string name="service_gui_REQUEST_AUTHORIZATION">Request authorization</string>
+    <string name="service_gui_REQUEST">发起请求</string>
+    <string name="service_gui_REQUEST_AUTHORIZATION">请求授权</string>
     <string name="service_gui_REQUEST_AUTHORIZATION_MSG">
         Can\'t add %1$s to your Contact List.
         %1$s must authorize your request to add him/her.
         Please enter your request below.
     </string>
-    <string name="service_gui_RE_REQUEST_AUTHORIZATION">
-        Re-request authorization
-    </string>
-    <string name="service_gui_REMOVE">
-        Remove
-    </string>
-    <string name="service_gui_REMOVE_CONTACT">
-        Remove contact
-    </string>
+    <string name="service_gui_RE_REQUEST_AUTHORIZATION">重新请求授权</string>
+    <string name="service_gui_REMOVE">删除</string>
+    <string name="service_gui_REMOVE_CONTACT">删除联系人</string>
     <string name="service_gui_REMOVE_CONTACT_TEXT">
         <DIV>Are you sure you want to remove <B> %s </B><BR/>from your contact list?</DIV>
     </string>
-    <string name="service_gui_REMOVE_ACCOUNT">Remove account</string>
-    <string name="service_gui_REMOVE_ACCOUNT_MESSAGE">
-        Are you sure you want to remove %s?
-    </string>
-    <string name="service_gui_RESTORING">
-        Restoring...
-    </string>
-    <string name="service_gui_SHUTDOWN_IN_PROGRESS">
-        Shutdown in progress...
-    </string>
+    <string name="service_gui_REMOVE_ACCOUNT">移除账户</string>
+    <string name="service_gui_REMOVE_ACCOUNT_MESSAGE">你确定要删除 %s 吗?</string>
+    <string name="service_gui_RESTORING">正在恢复&#8230;</string>
+    <string name="service_gui_SHUTDOWN_IN_PROGRESS">正在关闭&#8230;</string>
     <string name="service_gui_VOLUME_GAIN_LEVEL">Volume gain level: %s%%</string>
-    <string name="service_gui_WARN_CALL_IN_PROGRESS">
-        Can\'t do this during a call
-    </string>
+    <string name="service_gui_WARN_CALL_IN_PROGRESS">正在通话，退出操作&#8230;</string>
 
     <!-- Sign in -->
-    <string name="service_gui_SIGN_IN">Sign in</string>
-    <string name="service_gui_SIGN_OUT">Sign out</string>
-    <string name="service_gui_CREATE_ACCOUNT">Create account</string>
-    <string name="service_gui_LOGIN_FAILED">
-        Login failed
-    </string>
+    <string name="service_gui_SIGN_IN">登录</string>
+    <string name="service_gui_SIGN_OUT">退出</string>
+    <string name="service_gui_CREATE_ACCOUNT">切换账户</string>
+    <string name="service_gui_LOGIN_FAILED">登录失败</string>
     <string name="service_gui_LOGIN_NETWORK_ERROR">
         Unable to log in with account: User name: {0}, Server name: {1}, due to a network failure. Please check your network connection.
     </string>
@@ -157,7 +143,7 @@
         Please check your settings or contact your network administrator for more information.
     </string>
     <string name="plugin_reconnectplugin_NETWORK_DOWN">
-        Network connectivity lost!
+        网络连接丢失!
     </string>
 
     <!-- General -->

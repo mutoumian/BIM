@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:padding="@dimen/screen_padding"
               android:layout_centerHorizontal="true"
+              android:gravity="center_vertical"
               android:orientation="vertical"
               android:background="@mipmap/loginbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:text="@string/system_title"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:textSize="@dimen/system_title_text_size" />
 
     <Spinner
         android:id="@+id/networkSpinner"
@@ -49,4 +57,5 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/signin_button"
         android:layout_marginBottom="@dimen/between_padding"/>
+
 </LinearLayout>

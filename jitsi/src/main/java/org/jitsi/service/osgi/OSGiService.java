@@ -29,7 +29,7 @@ public class OSGiService extends Service {
     /**
      * The ID of Jitsi notification icon
      */
-    private static int GENERAL_NOTIFICATION_ID = R.string.app_name;
+    private static int GENERAL_NOTIFICATION_ID = R.string.module_name;
 
     /**
      * Indicates that Jitsi is running in foreground mode and it's icon is
@@ -141,7 +141,7 @@ public class OSGiService extends Service {
         PendingIntent pendIntent = JitsiApplication.getJitsiIconIntent();
 
         Resources res = getResources();
-        String title = res.getString(R.string.app_name);
+        String title = res.getString(R.string.module_name);
 
         NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this).setContentTitle(title).setWhen(System.currentTimeMillis()).setSmallIcon(R.mipmap.notificationicon);
         nBuilder.setContentIntent(pendIntent);

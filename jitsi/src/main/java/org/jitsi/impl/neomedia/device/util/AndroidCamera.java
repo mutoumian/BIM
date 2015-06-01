@@ -7,6 +7,8 @@
 package org.jitsi.impl.neomedia.device.util;
 
 import android.hardware.*;
+import android.hardware.camera2.CameraCharacteristics;
+import android.hardware.camera2.CameraDevice;
 
 import net.java.sip.communicator.util.*;
 

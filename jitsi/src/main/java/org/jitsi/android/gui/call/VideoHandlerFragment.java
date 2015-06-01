@@ -276,6 +276,8 @@ public class VideoHandlerFragment extends OSGiFragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        //切换前后摄像头
         if (item.getItemId() == R.id.switch_camera) {
             // Ignore action if camera switching is in progress
             if (cameraSwitchThread != null) return true;

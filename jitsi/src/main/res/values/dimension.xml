@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="system_title_text_size">36sp</dimen>
     <dimen name="login_field_width">400dp</dimen>
     <dimen name="call_field_width">300dp</dimen>
     <dimen name="label_text_size">16sp</dimen>

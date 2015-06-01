@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jitsi</string>
+    <!--<string name="app_name">Jitsi</string>-->
+    <string name="system_title">BIM</string>
+    <string name="module_name">Jitsi</string>
     <string name="ACCOUNT_TYPE">org.jitsi.android.account</string>
     <string name="send_process_signal">Send Process Signal</string>
     <string name="stop_osgi_framework">Stop OSGi Framework</string>
@@ -24,6 +26,7 @@
     </string-array>
     <string name="enter_name_or_number">Enter name or number</string>
     <string name="hang_up">Hang up call</string>
+    <string name="reversal_camera">reversal_camera</string>
     <string name="accept_call_video">Answer call with video</string>
     <string name="hold">Put call on hold</string>
     <string name="show_call_info">Call info</string>

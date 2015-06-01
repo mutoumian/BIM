@@ -182,7 +182,7 @@ public class AndroidResourceServiceImpl extends AbstractResourcesService {
      * @param key the name of drawable
      */
     private int getDrawableId(String key) {
-        return getResourceId("drawable", key);
+        return getResourceId("mipmap", key);
     }
 
     /**

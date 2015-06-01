@@ -155,6 +155,7 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
 
         callConference = call.getConference();
 
+        initReversalCamera();
         initSpeakerphoneButton();
         initMicrophoneView();
         initHangupView();
@@ -217,6 +218,21 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
         super.onRestoreInstanceState(savedInstanceState);
         if (sasToastController != null)
             sasToastController.onRestoreInstanceState(savedInstanceState);
+    }
+
+    /**
+     * 初始化前后摄像头反转切换
+     */
+    private void initReversalCamera(){
+        ImageButton reversalCameraButton = (ImageButton) findViewById(R.id.reversal_camera);
+        reversalCameraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+
+            }
+        });
     }
 
     /**
