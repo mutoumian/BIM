@@ -23,24 +23,24 @@
         <item>SIP</item>
         <item>Jabber</item>
     </string-array>
-    <string name="enter_name_or_number">Enter name or number</string>
-    <string name="hang_up">Hang up call</string>
+    <string name="enter_name_or_number">输入名称或号码</string>
+    <string name="hang_up">挂断</string>
     <string name="reversal_camera">切换前后摄像头</string>
-    <string name="accept_call_video">Answer call with video</string>
-    <string name="hold">Put call on hold</string>
-    <string name="show_call_info">Call info</string>
+    <string name="accept_call_video">接听</string>
+    <string name="hold">搁置</string>
+    <string name="show_call_info">通讯信息</string>
     <string name="show_call_zrtp_info">"Call ZRTP info</string>
-    <string name="video_resolution">Video resolution</string>
+    <string name="video_resolution">视频分辨率</string>
     <string name="low_video_resolution">320x240</string>
     <string name="high_video_resolution">640x480</string>
     <string name="exit_app">退出</string>
-    <string name="service_gui_UNKNOWN_CONTACT">Unknown</string>
-    <string name="service_gui_ACCOUNT_ME">Me</string>
+    <string name="service_gui_UNKNOWN_CONTACT">未知</string>
+    <string name="service_gui_ACCOUNT_ME">我</string>
     <string name="service_gui_ACCOUNT_SETTINGS">帐户设置</string>
-    <string name="service_gui_ACCOUNT_DISCONNECTED">%s is disconnected</string>
+    <string name="service_gui_ACCOUNT_DISCONNECTED">%s 断开连接</string>
     <string name="service_gui_CONTACT_PAUSED_TYPING">停止输入</string>
     <string name="service_gui_CONTACT_TYPING">正在输入&#8230;</string>
-    <string name="service_gui_BUSY_STATUS">Busy</string>
+    <string name="service_gui_BUSY_STATUS">忙碌</string>
 
     <string name="service_gui_ADD_AUTHORIZED_CONTACT">Add %s to your contact list</string>
     <string name="service_gui_ADD_GROUP_LOCAL_ERROR">
@@ -159,14 +159,14 @@
     <string name="service_gui_SEARCH">Search</string>
     <string name="service_gui_ADD_CONTACT">Add contact</string>
     <string name="service_gui_ON">On</string>
-    <string name="service_gui_ONLINE">Online</string>
+    <string name="service_gui_ONLINE">在线</string>
     <string name="service_gui_OFF">Off</string>
-    <string name="service_gui_OFFLINE">Offline</string>
-    <string name="service_gui_FFC_STATUS">Free for chat</string>
-    <string name="service_gui_AWAY_STATUS">Away</string>
-    <string name="service_gui_DND_STATUS">Do not disturb</string>
-    <string name="service_gui_RETRY">Retry</string>
-    <string name="service_gui_SEND_LOGS_QUESTION">Jitsi has just recovered after serious crash. Do you want to send the logs ?</string>
+    <string name="service_gui_OFFLINE">离线</string>
+    <string name="service_gui_FFC_STATUS">空闲</string>
+    <string name="service_gui_AWAY_STATUS">离开</string>
+    <string name="service_gui_DND_STATUS">请勿打扰</string>
+    <string name="service_gui_RETRY">重试</string>
+    <string name="service_gui_SEND_LOGS_QUESTION">BIM has just recovered after serious crash. Do you want to send the logs ?</string>
     <string name="service_gui_ERROR">Error</string>
     <string name="service_gui_ERROR_WAS">Error was: {0}</string>
     <string name="service_gui_WARNING">Warning</string>
@@ -208,7 +208,7 @@
         protocol or wait until he/she becomes online.
     </string>
     <string name="service_gui_MSG_DELIVERY_INTERNAL_ERROR">
-        An internal error occurred. This is most probably a bug. Please report it here: https://jitsi.org/Development/BugsAndIssues.
+        An internal error occurred. This is most probably a bug. Please report it here: https://bmtech.org/Development/BugsAndIssues.
     </string>
     <string name="service_gui_MSG_DELIVERY_ERROR">
         Failed to deliver message.
@@ -224,8 +224,8 @@
     </string>
 
     <!-- Logs -->
-    <string name="service_gui_SEND_LOGS_SUBJECT">Jitsi logs</string>
-    <string name="service_gui_SEND_LOGS_TITLE">Send Jitsi logs</string>
+    <string name="service_gui_SEND_LOGS_SUBJECT">BIM logs</string>
+    <string name="service_gui_SEND_LOGS_TITLE">Send BIM logs</string>
     <string name="service_gui_SEND_LOGS">Send logs</string>
 
     <!-- Call -->
@@ -1047,13 +1047,13 @@
     <string name="pref_key_video_camera">pref.key.video.camera</string>
     <string name="service_gui_settings_CAMERA">Camera</string>
     <string name="service_gui_settings_NO_CAMERA">No camera device found</string>
-    <string name="service_gui_settings_FRONT_CAMERA">Front camera</string>
-    <string name="service_gui_settings_BACK_CAMERA">Back camera</string>
-    <string name="service_gui_settings_USE_FRONT_CAMERA">Use front camera</string>
-    <string name="service_gui_settings_USE_BACK_CAMERA">Use back camera</string>
+    <string name="service_gui_settings_FRONT_CAMERA">前置摄像头</string>
+    <string name="service_gui_settings_BACK_CAMERA">后置摄像头</string>
+    <string name="service_gui_settings_USE_FRONT_CAMERA">使用前置摄像头</string>
+    <string name="service_gui_settings_USE_BACK_CAMERA">使用后置摄像头</string>
     <!-- Hardware codecs -->
     <string name="service_gui_settings_MEDIA_CODEC_LIST">
-        MediaCodecs
+        解码器
     </string>
     <string name="service_gui_settings_MEDIA_CODEC_LIST_SUMMARY">
         List of built-in media encoders/decoders
@@ -1295,5 +1295,5 @@
     <string name="pref_key_provisioning_METHOD">net.java.sip.communicator.plugin.provisioning.METHOD</string>
     <string name="pref_key_provisioning_UUID">net.java.sip.communicator.UUID</string>
 
-
+    <string name="company_name">©2015 北京博图纵横科技有限责任公司</string>
 </resources>

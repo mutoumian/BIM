@@ -2,7 +2,7 @@
 <resources>
     <!--<string name="app_name">Jitsi</string>-->
     <string name="system_title">BIM</string>
-    <string name="module_name">Jitsi</string>
+    <string name="module_name">bmtech</string>
     <string name="ACCOUNT_TYPE">org.jitsi.android.account</string>
     <string name="send_process_signal">Send Process Signal</string>
     <string name="stop_osgi_framework">Stop OSGi Framework</string>
@@ -1312,5 +1312,5 @@
     <string name="pref_key_provisioning_METHOD">net.java.sip.communicator.plugin.provisioning.METHOD</string>
     <string name="pref_key_provisioning_UUID">net.java.sip.communicator.UUID</string>
 
-
+    <string name="company_name">©2015 Beijing BTZH technology co., LTD</string>
 </resources>
