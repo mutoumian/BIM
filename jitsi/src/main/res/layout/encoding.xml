@@ -19,6 +19,6 @@
         custom:dragRegionEndX="@dimen/enc_list_drag_e_x"
         custom:dragRegionStartX="@dimen/enc_list_drag_s_x"
         custom:itemExpandedHeight="@dimen/expanded_item_height"
-        custom:itemHeight="@dimen/list_item_height"/>
+        custom:itemHeight="@dimen/list_item_height" />
 
 </LinearLayout>

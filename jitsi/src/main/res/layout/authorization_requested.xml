@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:padding="5dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
 
     <TextView
+        android:id="@+id/requestInfo"
+        style="@style/MediumFont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/between_padding"
-        android:text="@string/service_gui_AUTHORIZATION_REQUESTED_INFO"
-        style="@style/MediumFont"
-        android:id="@+id/requestInfo"/>
+        android:text="@string/service_gui_AUTHORIZATION_REQUESTED_INFO" />
 
     <CheckBox
+        android:id="@+id/addToContacts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/requestInfo"
         android:layout_marginBottom="@dimen/between_padding"
-        android:text="@string/service_gui_ADD_AUTHORIZED_CONTACT"
-        android:id="@+id/addToContacts"
         android:checked="true"
-        android:layout_below="@+id/requestInfo"/>
+        android:text="@string/service_gui_ADD_AUTHORIZED_CONTACT" />
 
     <TextView
+        android:id="@+id/selectGroupTxt"
+        style="@style/MediumFont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/addToContacts"
         android:layout_marginBottom="@dimen/between_padding"
-        android:text="@string/service_gui_SELECT_GROUP"
-        style="@style/MediumFont"
-        android:id="@+id/selectGroupTxt"
-        android:layout_below="@+id/addToContacts"/>
+        android:text="@string/service_gui_SELECT_GROUP" />
 
     <Spinner
+        android:id="@+id/selectGroupSpinner"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/item_height"
-        android:id="@+id/selectGroupSpinner"
-        android:layout_marginBottom="@dimen/between_padding"
-        android:layout_below="@+id/selectGroupTxt"/>
+        android:layout_below="@+id/selectGroupTxt"
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,30 +44,30 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/service_gui_AUTHORIZE"
             android:id="@+id/button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="onAcceptClicked"
-            style="?android:attr/buttonBarButtonStyle"/>
+            android:text="@string/service_gui_AUTHORIZE" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/service_gui_DENY"
             android:id="@+id/button1"
-            android:onClick="onRejectClicked"
-            style="?android:attr/buttonBarButtonStyle"/>
-
-        <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/service_gui_IGNORE"
+            android:onClick="onRejectClicked"
+            android:text="@string/service_gui_DENY" />
+
+        <Button
             android:id="@+id/button2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="onIgnoreClicked"
-            style="?android:attr/buttonBarButtonStyle"/>
+            android:text="@string/service_gui_IGNORE" />
     </LinearLayout>
 </LinearLayout>

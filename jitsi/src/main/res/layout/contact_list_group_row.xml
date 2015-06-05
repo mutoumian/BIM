@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/contact_list_group_row_height"
-                android:background="@color/contact_list_group"
-                android:descendantFocusability="blocksDescendants">
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/contact_list_group_row_height"
+    android:background="@color/contact_list_group"
+    android:descendantFocusability="blocksDescendants">
 
     <TextView
         android:id="@+id/displayName"
@@ -14,19 +14,19 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_centerVertical="true"
-        android:text="CONTACTS"/>
+        android:text="CONTACTS" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="1dip"
         android:layout_alignParentBottom="true"
-        android:background="@color/contact_list_divider"/>
+        android:background="@color/contact_list_divider" />
 
     <LinearLayout
         android:layout_width="7dip"
         android:layout_height="fill_parent"
         android:layout_alignParentRight="true"
-        android:background="@drawable/chatseparator"/>
+        android:background="@drawable/chatseparator" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -34,6 +34,6 @@
         android:id="@+id/groupIndicatorView"
         android:src="@mipmap/collapsed"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="6dp"/>
+        android:layout_marginLeft="6dp" />
 
 </RelativeLayout>

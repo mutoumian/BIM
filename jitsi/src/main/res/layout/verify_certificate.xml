@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-    >
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +14,7 @@
         android:layout_alignParentLeft="false"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -31,8 +30,7 @@
             android:text="@string/service_gui_CANCEL"
             android:id="@+id/cancelButton"
             style="?android:attr/buttonBarButtonStyle"
-            android:onClick="onCancelClicked"
-            />
+            android:onClick="onCancelClicked" />
 
         <Button
             android:layout_width="fill_parent"
@@ -41,8 +39,7 @@
             android:text="@string/service_gui_SHOW_CERT"
             android:id="@+id/showCert"
             style="?android:attr/buttonBarButtonStyle"
-            android:onClick="onShowCertClicked"
-            />
+            android:onClick="onShowCertClicked" />
 
         <Button
             android:layout_width="fill_parent"
@@ -51,7 +48,6 @@
             android:text="@string/service_gui_CONTINUE_ANYWAY"
             android:id="@+id/continueButton"
             style="?android:attr/buttonBarButtonStyle"
-            android:onClick="onContinueClicked"
-            />
+            android:onClick="onContinueClicked" />
     </LinearLayout>
 </RelativeLayout>

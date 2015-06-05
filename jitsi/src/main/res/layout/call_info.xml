@@ -1,296 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/scrollView">
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_CALL_INFORMATION"
             android:id="@+id/textView"
+            style="@style/CallInfo.SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            style="@style/CallInfo.SectionHeader"/>
+            android:text="@string/service_gui_callinfo_CALL_INFORMATION" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_PEER_COUNT"
             android:id="@+id/peerCountLabel"
-            android:layout_below="@+id/textView"
-            style="@style/CallInfo.Header"/>
-
-        <TextView
+            style="@style/CallInfo.Header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="xx"
+            android:layout_below="@+id/textView"
+            android:text="@string/service_gui_callinfo_PEER_COUNT" />
+
+        <TextView
             android:id="@+id/peerCount"
-            android:layout_toRightOf="@+id/peerCountLabel"
-            android:layout_below="@+id/textView"
-            style="@style/CallInfo.Value"/>
-
-        <TextView
+            style="@style/CallInfo.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_IS_CONFERENCE_FOCUS"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/peerCountLabel"
+            android:text="xx" />
+
+        <TextView
             android:id="@+id/confFocusLabel"
             style="@style/CallInfo.Header"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_below="@+id/peerCountLabel"/>
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="true"
-            android:id="@+id/conferenceFocus"
-            android:layout_toRightOf="@+id/confFocusLabel"
+            android:layout_alignLeft="@+id/textView"
             android:layout_below="@+id/peerCountLabel"
-            style="@style/CallInfo.Value"/>
+            android:text="@string/service_gui_callinfo_IS_CONFERENCE_FOCUS" />
 
         <TextView
+            android:id="@+id/conferenceFocus"
+            style="@style/CallInfo.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_CALL_IDENTITY"
+            android:layout_below="@+id/peerCountLabel"
+            android:layout_toRightOf="@+id/confFocusLabel"
+            android:text="true" />
+
+        <TextView
             android:id="@+id/identityLabel"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_below="@+id/confFocusLabel"
-            style="@style/CallInfo.Header"/>
-
-        <TextView
+            style="@style/CallInfo.Header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIP_ID@sipproxy.com"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_below="@+id/confFocusLabel"
+            android:text="@string/service_gui_callinfo_CALL_IDENTITY" />
+
+        <TextView
             android:id="@+id/identity"
-            android:layout_toRightOf="@+id/identityLabel"
-            android:layout_below="@+id/confFocusLabel"
-            style="@style/CallInfo.Value"/>
-
-        <TextView
+            style="@style/CallInfo.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_CALL_TRANSPORT"
+            android:layout_below="@+id/confFocusLabel"
+            android:layout_toRightOf="@+id/identityLabel"
+            android:text="SIP_ID@sipproxy.com" />
+
+        <TextView
             android:id="@+id/signalingLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView"
             android:layout_below="@+id/identityLabel"
-            style="@style/CallInfo.Header"/>
+            android:text="@string/service_gui_callinfo_CALL_TRANSPORT" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UDP"
             android:id="@+id/transport"
-            android:layout_toRightOf="@+id/signalingLabel"
-            android:layout_below="@+id/identityLabel"
-            style="@style/CallInfo.Value"/>
-
-        <TextView
+            style="@style/CallInfo.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CallPeer@other.server.com"
+            android:layout_below="@+id/identityLabel"
+            android:layout_toRightOf="@+id/signalingLabel"
+            android:text="UDP" />
+
+        <TextView
             android:id="@+id/callPeer"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView"
             android:layout_below="@+id/signalingLabel"
-            style="@style/CallInfo.Header"/>
+            android:text="CallPeer@other.server.com" />
 
         <TextView
+            android:id="@+id/durationLabel"
+            style="@style/CallInfo.Header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_CALL_DURATION"
-            android:id="@+id/durationLabel"
             android:layout_alignLeft="@+id/textView"
             android:layout_below="@+id/callPeer"
-            style="@style/CallInfo.Header"/>
+            android:text="@string/service_gui_callinfo_CALL_DURATION" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xx:xx:xx"
             android:id="@+id/callDuration"
-            android:layout_toRightOf="@+id/durationLabel"
+            style="@style/CallInfo.Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/callPeer"
-            style="@style/CallInfo.Value"/>
+            android:layout_toRightOf="@+id/durationLabel"
+            android:text="xx:xx:xx" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_ICE_STATE"
             android:id="@+id/iceStateLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/durationLabel"
-            style="@style/CallInfo.Header"
-            />
+            android:text="@string/service_gui_callinfo_ICE_STATE" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_ICE_STATE_RUNNING"
             android:id="@+id/iceState"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/iceStateLabel"
-            style="@style/CallInfo.ValueSingleLine"/>
+            android:text="@string/service_gui_callinfo_ICE_STATE_RUNNING" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/service_gui_callinfo_TOTAL_HARVESTING_TIME"
             android:id="@+id/totalHarvestLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/iceState"
-            style="@style/CallInfo.Header"
-            />
+            android:text="@string/service_gui_callinfo_TOTAL_HARVESTING_TIME" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/totalHarvestTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/totalHarvestLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GoogleTurnCandidateHarvester"
             android:id="@+id/googleTurnLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/totalHarvestTime"
-            style="@style/CallInfo.Header"
-            />
+            android:text="GoogleTurnCandidateHarvester" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/googleTurnTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/googleTurnLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GoogleTurnSSLCandidateHarvester"
             android:id="@+id/googleTurnSSlLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/googleTurnTime"
-            style="@style/CallInfo.Header"
-            />
+            android:text="GoogleTurnSSLCandidateHarvester" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/googleTurnSSlTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/googleTurnSSlLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="HostCandidateHarvester"
             android:id="@+id/hostHarvesterLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/googleTurnSSlTime"
-            style="@style/CallInfo.Header"
-            />
+            android:text="HostCandidateHarvester" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/hostHarvesterTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/hostHarvesterLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JingleNodesHarvester"
             android:id="@+id/jingleNodesLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/hostHarvesterTime"
-            style="@style/CallInfo.Header"
-            />
+            android:text="JingleNodesHarvester" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/jingleNodesTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/jingleNodesLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="StunCandidateHarvester"
             android:id="@+id/stunHarvesterLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/jingleNodesTime"
-            style="@style/CallInfo.Header"
-            />
+            android:text="StunCandidateHarvester" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/stunHarvesterTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/stunHarvesterLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TurnCandidateHarvester"
             android:id="@+id/turnHarvesterLabel"
+            style="@style/CallInfo.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/stunHarvesterTime"
-            style="@style/CallInfo.Header"
-            />
+            android:text="TurnCandidateHarvester" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
             android:id="@+id/turnHarvesterTime"
+            style="@style/CallInfo.ValueSingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/turnHarvesterLabel"
-            style="@style/CallInfo.ValueSingleLine"
-            />
+            android:text="xxx ms (for xx harvests)" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UPNPHarvester"
             android:id="@+id/upnpHarvesterLabel"
-            android:layout_below="@+id/turnHarvesterTime"
             style="@style/CallInfo.Header"
-            />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="xxx ms (for xx harvests)"
+            android:layout_below="@+id/turnHarvesterTime"
+            android:text="UPNPHarvester" />
+
+        <TextView
             android:id="@+id/upnpHarvesterTime"
-            android:layout_below="@+id/upnpHarvesterLabel"
             style="@style/CallInfo.ValueSingleLine"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upnpHarvesterLabel"
+            android:text="xxx ms (for xx harvests)" />
         <!-- Include audio video part -->
         <include
-            layout="@layout/audio_video_info"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:layout_below="@+id/upnpHarvesterTime"
             android:id="@+id/audioInfo"
-            />
+            layout="@layout/audio_video_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upnpHarvesterTime" />
 
         <include
-            layout="@layout/audio_video_info"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:layout_below="@+id/audioInfo"
             android:id="@+id/videoInfo"
-            />
+            layout="@layout/audio_video_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audioInfo" />
     </RelativeLayout>
 </ScrollView>

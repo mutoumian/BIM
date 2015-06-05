@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:fillViewport="true"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
 
-    <org.jitsi.android.gui.widgets.ScrollingTable
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <org.jitsi.android.gui.widgets.ScrollingTable xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/content"
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -18,8 +16,7 @@
             android:layout_height="50dp"
             android:shrinkColumns="0,1,2,3"
             android:stretchColumns="4"
-            android:showDividers="beginning|middle|end"
-            >
+            android:showDividers="beginning|middle|end">
 
             <TableRow
                 android:layout_width="wrap_content"
@@ -32,8 +29,7 @@
                     android:minWidth="100dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
-                    />
+                    android:padding="5dp" />
 
                 <TextView
                     android:text="Popup"
@@ -41,56 +37,48 @@
                     android:minWidth="100dp"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:gravity="center_horizontal"
-                    />
+                    android:gravity="center_horizontal" />
 
                 <TextView
                     android:text="Sound Notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:gravity="center_horizontal"
-                    />
+                    android:gravity="center_horizontal" />
 
                 <TextView
                     android:text="Sound Playback"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:gravity="center_horizontal"
-                    />
+                    android:gravity="center_horizontal" />
 
                 <TextView
                     android:text="Vibrate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:gravity="center_horizontal"
-                    />
+                    android:gravity="center_horizontal" />
 
                 <TextView
                     android:text="Description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:gravity="center"
-                    />
+                    android:gravity="center" />
             </TableRow>
         </TableLayout>
 
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:fillViewport="true"
-            >
+            android:fillViewport="true">
 
             <TableLayout
                 android:id="@+id/table_body"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:showDividers="beginning|middle|end"
-                >
-            </TableLayout>
+                android:showDividers="beginning|middle|end"></TableLayout>
         </ScrollView>
     </org.jitsi.android.gui.widgets.ScrollingTable>
 </HorizontalScrollView>

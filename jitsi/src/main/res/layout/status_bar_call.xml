@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:id="@+id/notificationContent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:id="@+id/notificationContent">
 
     <RelativeLayout
         android:layout_width="64dp"
@@ -20,8 +20,7 @@
             android:id="@+id/imageView"
             android:src="@drawable/ic_stat_logo_white"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            />
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
     <TextView
@@ -34,7 +33,7 @@
         android:layout_alignParentLeft="false"
         android:layout_marginLeft="5dp"
         style="@style/NotificationTitle"
-        android:layout_toRightOf="@+id/iconContainer"/>
+        android:layout_toRightOf="@+id/iconContainer" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +44,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginRight="8dp"
         android:singleLine="true"
-        style="@style/NotificationTitle"/>
+        style="@style/NotificationTitle" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -63,8 +62,7 @@
             android:background="@color/status_bar_button"
             android:src="@mipmap/status_bar_show_call"
             android:scaleType="centerInside"
-            android:padding="2dp"
-            />
+            android:padding="2dp" />
 
         <ImageButton
             android:layout_width="fill_parent"
@@ -74,8 +72,7 @@
             android:background="@color/status_bar_button"
             android:src="@mipmap/status_bar_speaker"
             android:scaleType="centerInside"
-            android:padding="2dp"
-            />
+            android:padding="2dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -83,8 +80,7 @@
             android:id="@+id/mute_button"
             android:text="Mute"
             style="@style/NotificationCtrlButton"
-            android:background="@mipmap/status_btn_off"
-            />
+            android:background="@mipmap/status_btn_off" />
 
         <Button
             android:layout_width="fill_parent"
@@ -92,8 +88,7 @@
             android:id="@+id/hold_button"
             android:text="Hold"
             style="@style/NotificationCtrlButton"
-            android:background="@mipmap/status_btn_off"
-            />
+            android:background="@mipmap/status_btn_off" />
 
         <ImageButton
             android:layout_width="fill_parent"
@@ -103,6 +98,6 @@
             android:background="@color/status_bar_hangup"
             android:src="@mipmap/status_bar_hangup"
             android:padding="8dp"
-            android:scaleType="centerInside"/>
+            android:scaleType="centerInside" />
     </LinearLayout>
 </RelativeLayout>

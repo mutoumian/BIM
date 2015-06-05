@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -12,7 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plugin_otr_authbuddydialog_AUTHENTICATION_INFO"
-            android:id="@+id/textView"/>
+            android:id="@+id/textView" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
             android:text="@string/plugin_otr_authbuddydialog_LOCAL_FINGERPRINT"
             android:id="@+id/localFingerprintLbl"
             android:layout_below="@+id/textView"
-            android:layout_marginTop="@dimen/between_padding"/>
+            android:layout_marginTop="@dimen/between_padding" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:text="@string/plugin_otr_authbuddydialog_REMOTE_FINGERPRINT"
             android:id="@+id/remoteFingerprintLbl"
             android:layout_below="@+id/localFingerprintLbl"
-            android:layout_marginTop="@dimen/between_padding"/>
+            android:layout_marginTop="@dimen/between_padding" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -44,7 +44,7 @@
                 android:text="New ToggleButton"
                 android:id="@+id/verifyButton"
                 android:textOff="@string/plugin_otr_authbuddydialog_I_HAVE_NOT"
-                android:textOn="@string/plugin_otr_authbuddydialog_I_HAVE"/>
+                android:textOn="@string/plugin_otr_authbuddydialog_I_HAVE" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
                 android:text="@string/plugin_otr_authbuddydialog_VERIFY_ACTION"
                 android:id="@+id/actionTextView"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,7 +69,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:id="@+id/cancelButton"
                 android:layout_weight="1"
-                android:onClick="onCancelClicked"/>
+                android:onClick="onCancelClicked" />
 
             <Button
                 android:layout_width="fill_parent"
@@ -78,7 +78,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:id="@+id/okButton"
                 android:layout_weight="1"
-                android:onClick="onOkClicked"/>
+                android:onClick="onOkClicked" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:padding="@dimen/screen_padding"
-              android:layout_centerHorizontal="true"
-              android:gravity="center_vertical"
-              android:orientation="vertical"
-              android:background="@mipmap/loginbackground">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/screen_padding"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@mipmap/loginbackground">
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:padding="10dp"
         android:inputType="text"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <EditText
         android:id="@+id/passwordField"
@@ -45,7 +45,7 @@
         android:inputType="textPassword"
         android:hint="@string/password"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <Button
         android:id="@+id/signInButton"
@@ -55,6 +55,6 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/item_height"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
 </LinearLayout>

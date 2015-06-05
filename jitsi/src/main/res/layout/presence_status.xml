@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@mipmap/background"
-                android:gravity="center_horizontal"
-    >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:gravity="center_horizontal">
 
     <ImageView
         android:id="@+id/accountAvatar"
@@ -16,8 +15,7 @@
         android:clickable="true"
         android:onClick="onAvatarClicked"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_marginLeft="10dp" />
 
     <Spinner
         android:layout_width="fill_parent"
@@ -29,8 +27,7 @@
         android:layout_centerVertical="true"
         android:layout_gravity="center_vertical"
         android:layout_alignTop="@+id/accountAvatar"
-        android:layout_alignRight="@+id/presenceStatusMessageEdit"
-        />
+        android:layout_alignRight="@+id/presenceStatusMessageEdit" />
 
     <EditText
         style="@style/MediumFont"

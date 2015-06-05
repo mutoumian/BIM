@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
 
     <ScrollView
         android:id="@+id/scroller"
@@ -19,14 +17,14 @@
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dip"/>
+            android:padding="10dip" />
     </ScrollView>
 
     <ImageView
         android:id="@+id/arrow_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/arrow_up"/>
+        android:src="@mipmap/arrow_up" />
 
     <ImageView
         android:id="@+id/arrow_down"
@@ -34,6 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/scroller"
         android:layout_marginTop="-4dip"
-        android:src="@mipmap/arrow_down"/>
+        android:src="@mipmap/arrow_down" />
 
 </RelativeLayout>

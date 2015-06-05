@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@mipmap/background"
-                android:keepScreenOn="true">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:keepScreenOn="true">
 
     <org.jitsi.android.gui.call.RemoteVideoLayout
         android:id="@+id/remoteVideoContainer"
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_above="@+id/buttonContainer">
-        
+
         <ImageButton
             android:id="@+id/reversal_camera"
             android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_alignParentEnd="true"
             android:contentDescription="@string/reversal_camera"
             android:background="@drawable/image_button_background"
-            android:src="@mipmap/reversal_camera"/>
+            android:src="@mipmap/reversal_camera" />
 
         <LinearLayout
             android:id="@+id/callInfoGroup"
@@ -79,7 +79,7 @@
                     android:gravity="center_vertical"
                     android:text="{call status}"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/label_text_size"/>
+                    android:textSize="@dimen/label_text_size" />
 
                 <RelativeLayout
                     android:id="@+id/security_group"

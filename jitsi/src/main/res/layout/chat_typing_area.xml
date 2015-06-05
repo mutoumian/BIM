@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="horizontal"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/chatTypingArea"
-                android:background="@color/blue"
-                android:padding="6dp">
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chatTypingArea"
+    android:background="@color/blue"
+    android:padding="6dp">
 
     <ImageView
         android:id="@+id/chatWriteTextBg"
@@ -17,7 +17,7 @@
         android:layout_alignTop="@+id/sendMessageButton"
         android:layout_alignBottom="@+id/sendMessageButton"
         android:layout_toLeftOf="@+id/sendMessageButton"
-        android:layout_marginLeft="3dp"/>
+        android:layout_marginLeft="3dp" />
 
     <EditText
         android:id="@+id/chatWriteText"
@@ -34,7 +34,7 @@
         android:layout_alignTop="@+id/chatWriteTextBg"
         android:layout_alignBottom="@+id/chatWriteTextBg"
         android:layout_toRightOf="@+id/editingImage"
-        android:layout_toLeftOf="@+id/cancelCorrectionBtn"/>
+        android:layout_toLeftOf="@+id/cancelCorrectionBtn" />
 
     <ImageButton
         android:id="@+id/sendMessageButton"
@@ -47,7 +47,7 @@
         android:layout_centerVertical="true"
         android:minHeight="40dp"
         android:minWidth="40dp"
-        android:layout_marginLeft="16dp"/>
+        android:layout_marginLeft="16dp" />
 
     <ImageView
         android:id="@+id/editingImage"
@@ -57,7 +57,7 @@
         android:layout_marginLeft="8dp"
         android:layout_centerVertical="true"
         android:background="@null"
-        android:layout_alignLeft="@+id/chatWriteTextBg"/>
+        android:layout_alignLeft="@+id/chatWriteTextBg" />
 
     <ImageButton
         android:id="@+id/cancelCorrectionBtn"
@@ -68,6 +68,5 @@
         android:background="@null"
         android:minWidth="40dp"
         android:minHeight="40dp"
-        android:layout_toLeftOf="@+id/sendMessageButton"
-        />
+        android:layout_toLeftOf="@+id/sendMessageButton" />
 </RelativeLayout>

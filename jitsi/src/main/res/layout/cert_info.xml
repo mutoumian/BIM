@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,40 +13,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:shrinkColumns="1"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:shrinkColumns="1" />
 
         <CheckBox
+            android:id="@+id/alwaysTrust"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/service_gui_ALWAYS_TRUST"
-            android:id="@+id/alwaysTrust"/>
+            android:text="@string/service_gui_ALWAYS_TRUST" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:orientation="horizontal">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/service_gui_CANCEL"
                 android:id="@+id/cancel"
-                android:onClick="onCancelClicked"
-                />
-
-            <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                style="?android:attr/buttonBarButtonStyle"
-                android:text="@string/service_gui_CONTINUE_ANYWAY"
+                android:onClick="onCancelClicked"
+                android:text="@string/service_gui_CANCEL" />
+
+            <Button
                 android:id="@+id/continueBtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:onClick="onContinueClicked"
-                />
+                android:text="@string/service_gui_CONTINUE_ANYWAY" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

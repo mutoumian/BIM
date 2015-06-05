@@ -13,5 +13,5 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="www.server.com:1234 (+TURN)"
-        android:layout_gravity="center_horizontal|top"/>
+        android:layout_gravity="center_horizontal|top" />
 </TableRow>

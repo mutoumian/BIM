@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="@mipmap/background"
-    >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
 
     <ListView
+        android:id="@+id/accountListView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/accountListView"
-        android:choiceMode="singleChoice"/>
+        android:choiceMode="singleChoice" />
 </LinearLayout>

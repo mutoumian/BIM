@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:padding="@dimen/screen_padding"
-              android:layout_centerHorizontal="true"
-              android:orientation="vertical"
-              android:gravity="center"
-              android:background="@mipmap/loginbackground">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/screen_padding"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/loginbackground">
 
     <TextView
         style="@style/MediumFont"
@@ -15,14 +15,14 @@
         android:layout_height="wrap_content"
         android:text="@string/service_gui_SELECT_ACCOUNT"
         android:id="@+id/selectAccountTxt"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <Spinner
         android:background="@mipmap/whitespinner"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/item_height"
         android:id="@+id/selectAccountSpinner"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <TextView
         style="@style/MediumFont"
@@ -30,14 +30,14 @@
         android:layout_height="wrap_content"
         android:text="@string/service_gui_SELECT_GROUP"
         android:id="@+id/selectGroupTxt"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <Spinner
         android:background="@mipmap/whitespinner"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/item_height"
         android:id="@+id/selectGroupSpinner"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <TextView
         style="@style/MediumFont"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="@string/service_gui_CONTACT_NAME"
         android:id="@+id/contactNameTxt"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <EditText
         style="@style/JitsiLoginTextView"
@@ -53,7 +53,7 @@
         android:layout_height="@dimen/item_height"
         android:id="@+id/editContactName"
         android:inputType="text"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <TextView
         style="@style/MediumFont"
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:text="@string/service_gui_DISPLAY_NAME"
         android:id="@+id/displayNameText"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <EditText
         style="@style/JitsiLoginTextView"
@@ -69,7 +69,7 @@
         android:layout_height="@dimen/item_height"
         android:id="@+id/editDisplayName"
         android:inputType="text"
-        android:layout_marginBottom="@dimen/between_padding"/>
+        android:layout_marginBottom="@dimen/between_padding" />
 
     <Button
         android:layout_width="wrap_content"
@@ -78,5 +78,5 @@
         android:id="@+id/button"
         android:focusable="true"
         android:background="@drawable/signin_button"
-        android:onClick="onAddClicked"/>
+        android:onClick="onAddClicked" />
 </LinearLayout>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@mipmap/background">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -21,7 +20,7 @@
             android:layout_height="50dp"
             android:layout_marginRight="@dimen/between_padding"
             android:inputType="text"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
     <ImageButton
@@ -32,5 +31,5 @@
         android:layout_width="fill_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:focusable="true"/>
+        android:focusable="true" />
 </RelativeLayout>

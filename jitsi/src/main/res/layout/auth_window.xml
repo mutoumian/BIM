@@ -1,101 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/screen_padding"
-                android:paddingLeft="@dimen/screen_padding"
-                android:paddingRight="@dimen/screen_padding"
-                android:gravity="center">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="@dimen/screen_padding"
+    android:paddingRight="@dimen/screen_padding"
+    android:paddingTop="@dimen/screen_padding">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/text"
-        android:text="[window text]"
-
         style="@style/MediumFont"
-        />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/username_label"
+
+        android:text="[window text]" />
+
+    <TextView
         android:id="@+id/username_label"
-        android:layout_alignTop="@+id/username"
-        android:layout_alignBottom="@+id/username"
-        android:gravity="center_vertical|right"
         style="@style/MediumFont"
-        />
-
-    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignTop="@+id/username"
+        android:gravity="center_vertical|right"
+        android:text="@string/username_label" />
+
+    <EditText
         android:id="@+id/username"
-        android:hint="@string/username_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
         android:layout_gravity="center"
-        android:layout_toRightOf="@+id/username_label"
         android:layout_marginLeft="5dp"
-        android:layout_below="@+id/text"/>
+        android:layout_toRightOf="@+id/username_label"
+        android:hint="@string/username_hint" />
 
     <TextView
+        android:id="@+id/password_label"
+        style="@style/MediumFont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/password_label"
-        android:text="@string/password_label"
-        android:layout_below="@+id/username"
         android:layout_alignBottom="@+id/password"
-        android:gravity="center_vertical|right"
-        android:layout_alignRight="@+id/username_label"
         android:layout_alignLeft="@+id/username_label"
-        style="@style/MediumFont"
-        />
+        android:layout_alignRight="@+id/username_label"
+        android:layout_below="@+id/username"
+        android:gravity="center_vertical|right"
+        android:text="@string/password_label" />
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:layout_gravity="center"
-        android:layout_toRightOf="@+id/username_label"
+        android:layout_alignRight="@+id/username"
         android:layout_below="@+id/username"
+        android:layout_gravity="center"
         android:layout_marginLeft="5dp"
-        android:layout_alignRight="@+id/username"/>
+        android:layout_toRightOf="@+id/username_label"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
 
     <CheckBox
+        android:id="@+id/store_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/store_password"
-        android:id="@+id/store_password"
         android:layout_below="@+id/password_label"
-        />
+        android:text="@string/store_password" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@+id/store_password"
-        >
+        android:orientation="horizontal">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/service_gui_CANCEL"
-            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/cancelButton"
-            android:onClick="onCancelClicked"
-            />
-
-        <Button
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/service_gui_OK"
-            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="onCancelClicked"
+            android:text="@string/service_gui_CANCEL" />
+
+        <Button
             android:id="@+id/okButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:onClick="onOkClicked"
-            />
+            android:text="@string/service_gui_OK" />
     </LinearLayout>
 </RelativeLayout>

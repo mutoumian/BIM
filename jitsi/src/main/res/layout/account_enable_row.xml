@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="@dimen/account_list_row_height">
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/account_list_row_height">
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -11,8 +11,7 @@
         android:id="@+id/accountToggleButton"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="5dp"
-        />
+        android:layout_marginLeft="5dp" />
 
     <ImageView
         android:id="@+id/accountProtoIcon"
@@ -21,7 +20,7 @@
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@+id/accountToggleButton"
         android:src="@mipmap/jabber_logo"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -42,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/accountStatusIcon"
-                android:src="@mipmap/jabber_status_phone"/>
+                android:src="@mipmap/jabber_status_phone" />
 
             <TextView
                 style="@style/MediumFont"
@@ -52,8 +51,7 @@
                 android:text="@string/service_gui_OFFLINE"
                 android:gravity="center_vertical"
                 android:layout_toRightOf="@+id/accountStatusIcon"
-                android:layout_marginLeft="5dp"
-                />
+                android:layout_marginLeft="5dp" />
         </RelativeLayout>
 
         <TextView
@@ -62,6 +60,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/accountName"
             android:singleLine="true"
-            android:ellipsize="end"/>
+            android:ellipsize="end" />
     </RelativeLayout>
 </RelativeLayout>
