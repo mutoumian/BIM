@@ -88,4 +88,16 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
 
     //compile 'com.android.support:multidex-instrumentation:1.0.1'
+
+    //compile 'br.com.liveo:navigationdrawer-material:2.3.2'
+
+    compile('com.mikepenz:materialdrawer:3.0.6@aar') {
+        transitive = true
+    }
+
+    compile('com.mikepenz:aboutlibraries:5.0.1@aar') {
+        transitive = true
+    }
+    compile 'com.mikepenz:octicons-typeface:2.2.0@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
