@@ -46,8 +46,4 @@ public class BIMApplication extends JitsiApplication {
         }
     }
 
-    public static void test(){
-        System.out.print("123");
-    }
-
 }

@@ -12,6 +12,12 @@ model {
             targetSdkVersion.apiLevel = 22
             versionCode = 1
             versionName = "1.0"
+
+            // Enable the experimental Jack build tools.
+            useJack = true
+
+            // Enabling multidex support.
+            multiDexEnabled = true
         }
     }
 
