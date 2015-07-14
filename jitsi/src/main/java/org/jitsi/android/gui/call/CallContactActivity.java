@@ -15,8 +15,8 @@ import android.telephony.*;
 import org.jitsi.service.osgi.*;
 
 /**
- * Tha <tt>CallContactActivity</tt> can be used to call contact. The phone
- * number can be filled from <tt>Intent</tt> data.
+ * Tha CallContactActivity can be used to call contact.
+ * The phone number can be filled from Intent data.
  *
  * @author Yana Stamcheva
  * @author Pawel Domas

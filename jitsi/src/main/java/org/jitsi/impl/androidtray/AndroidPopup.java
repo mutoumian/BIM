@@ -80,7 +80,7 @@ public class AndroidPopup {
         this.popupMessage = popupMessage;
 
         // Default Jitsi icon
-        this.smallIcon = R.mipmap.notificationicon;
+        this.smallIcon = R.drawable.ic_stat_logo_white;
 
         // Null group is sharing general notification icon
         if (popupMessage.getGroup() == null) {

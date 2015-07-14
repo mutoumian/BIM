@@ -101,6 +101,7 @@ public class OSGiPreferenceActivity extends PreferenceActivity {
         // Hooks the exception handler to the UI thread
         ExceptionHandler.checkAndAttachExceptionHandler();
 
+        /* lycoris
         if (AndroidUtils.hasAPI(11)) {
             ActionBar actionBar = getActionBar();
             if (actionBar != null) {
@@ -118,7 +119,7 @@ public class OSGiPreferenceActivity extends PreferenceActivity {
                 ActionBarUtil.setTitle(this, getTitle());
             }
         }
-
+        */
         super.onCreate(savedInstanceState);
 
         ServiceConnection serviceConnection = new ServiceConnection() {
@@ -312,6 +313,7 @@ public class OSGiPreferenceActivity extends PreferenceActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle home action
+        /*
         switch (item.getItemId()) {
             case android.R.id.home:
                 Class<?> homeActivity = JitsiApplication.getHomeScreenActivityClass();
@@ -322,6 +324,8 @@ public class OSGiPreferenceActivity extends PreferenceActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+        */
+        return super.onOptionsItemSelected(item);
     }
 
     /**

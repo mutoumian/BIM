@@ -17,7 +17,6 @@ import net.java.sip.communicator.util.*;
 import org.jitsi.*;
 import org.jitsi.android.*;
 import org.jitsi.android.gui.*;
-import org.jitsi.android.gui.LauncherActivity;
 import org.jitsi.android.gui.util.*;
 import org.jitsi.service.resources.*;
 
@@ -54,6 +53,7 @@ public class AndroidSecurityAuthority implements SecurityAuthority {
             return obtainCredentials(realm, defaultValues);
 
         Context ctx = JitsiApplication.getGlobalContext();
+
         ResourceManagementService resources = AndroidGUIActivator.getResourcesService();
 
         String errorMessage = resources.getI18NString("service.gui.CONNECTION_FAILED_MSG", new String[]{defaultValues.getUserName(), realm});

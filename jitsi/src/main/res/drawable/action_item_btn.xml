@@ -6,10 +6,10 @@
         android:drawable="@android:color/transparent"/>
     <item
         android:state_pressed="true"
-        android:drawable="@mipmap/action_item_selected"/>
+        android:drawable="@drawable/action_item_selected"/>
     <item
         android:state_focused="true"
-        android:drawable="@mipmap/action_item_selected"/>
+        android:drawable="@drawable/action_item_selected"/>
     <item
         android:drawable="@android:color/transparent"/>
 </selector>

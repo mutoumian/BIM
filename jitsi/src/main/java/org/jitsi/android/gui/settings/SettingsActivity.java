@@ -274,6 +274,8 @@ public class SettingsActivity extends OSGiActivity {
 
         /**
          * Initializes video preferences part.
+         *
+         * 初始化视频偏好的部分
          */
         private void initVideoPreferences() {
             AndroidCamera[] cameras = AndroidCamera.getCameras();

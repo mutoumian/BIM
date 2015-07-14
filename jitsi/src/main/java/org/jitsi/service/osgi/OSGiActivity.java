@@ -13,6 +13,7 @@ import android.os.*;
 import android.os.Bundle; // disambiguation
 
 import android.support.v4.app.*;
+import android.support.v7.app.AppCompatActivity;
 import android.view.*;
 
 import net.java.sip.communicator.util.*;
@@ -20,7 +21,6 @@ import net.java.sip.communicator.util.*;
 import org.jitsi.*;
 import org.jitsi.android.*;
 import org.jitsi.android.gui.*;
-import org.jitsi.android.gui.LauncherActivity;
 import org.jitsi.android.gui.util.*;
 import org.jitsi.android.plugin.errorhandler.*;
 import org.osgi.framework.*;
@@ -33,7 +33,7 @@ import java.util.*;
  * @author Lyubomir Marinov
  * @author Pawel Domas
  */
-public class OSGiActivity extends FragmentActivity {
+public class OSGiActivity extends AppCompatActivity {
     /**
      * The logger
      */
@@ -111,11 +111,13 @@ public class OSGiActivity extends FragmentActivity {
         // Hooks the exception handler to the UI thread
         ExceptionHandler.checkAndAttachExceptionHandler();
 
+
         if (AndroidUtils.hasAPI(11)) {
             ActionBar actionBar = getActionBar();
             if (actionBar != null) {
 
                 // Disable up arrow on home activity
+                /*
                 Class<?> homeActivity = JitsiApplication.getHomeScreenActivityClass();
                 if (this.getClass().equals(homeActivity)) {
                     actionBar.setDisplayHomeAsUpEnabled(false);
@@ -123,8 +125,9 @@ public class OSGiActivity extends FragmentActivity {
                     if (AndroidUtils.hasAPI(14)) {
                         actionBar.setHomeButtonEnabled(false);
                     }
-                }
+                }*/
 
+                // lycoris
                 ActionBarUtil.setTitle(this, getTitle());
             }
         }
@@ -362,6 +365,7 @@ public class OSGiActivity extends FragmentActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle home action
+        /* lycoris
         switch (item.getItemId()) {
             case android.R.id.home:
                 Class<?> homeActivity = JitsiApplication.getHomeScreenActivityClass();
@@ -372,6 +376,8 @@ public class OSGiActivity extends FragmentActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+        */
+        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -399,6 +405,7 @@ public class OSGiActivity extends FragmentActivity {
      *
      * @return <tt>true</tt> if restore <tt>Intent</tt> has been posted.
      */
+    /* lycoris
     protected boolean postRestoreIntent() {
         // Restore after OSGi startup
         if (AndroidGUIActivator.bundleContext == null) {
@@ -410,6 +417,7 @@ public class OSGiActivity extends FragmentActivity {
         }
         return false;
     }
+    */
 
     /**
      * Broadcast listener that listens for {@link JitsiApplication#ACTION_EXIT}

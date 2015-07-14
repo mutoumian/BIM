@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/search"
         android:title="@string/service_gui_ENTER_NAME_OR_NUMBER"
         android:icon="@mipmap/search"
-        app:showAsAction="always|collapseActionView"
         android:actionViewClass="android.widget.SearchView">
         <!--
         android:showAsAction="always|collapseActionView"
@@ -15,8 +12,7 @@
     <item
         android:id="@+id/add_contact"
         android:title="@string/service_gui_ADD_CONTACT"
-        android:icon="@mipmap/addcontact"
-        app:showAsAction="ifRoom">
+        android:icon="@mipmap/addcontact">
         <!--
         android:showAsAction="ifRoom"
         -->

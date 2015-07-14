@@ -12,6 +12,8 @@ import android.content.*;
 import android.os.*;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.MenuCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.view.*;
 import android.widget.*;
 import android.widget.ExpandableListView.OnChildClickListener;
@@ -130,10 +132,12 @@ public class ContactListFragment extends OSGiFragment implements OnChildClickLis
         // Get the SearchView and set the searchable configuration
         SearchManager searchManager = (SearchManager) activity.getSystemService(Context.SEARCH_SERVICE);
 
+        /*
         this.searchItem = menu.findItem(R.id.search);
 
         // OnActionExpandListener not supported prior API 14
         if (AndroidUtils.hasAPI(14)) {
+
             searchItem.setOnActionExpandListener(new MenuItem.OnActionExpandListener() {
                         @Override
                         public boolean onMenuItemActionCollapse(MenuItem item) {
@@ -159,6 +163,7 @@ public class ContactListFragment extends OSGiFragment implements OnChildClickLis
 
             bindSearchListener();
         }
+        */
     }
 
     private void bindSearchListener() {
@@ -235,9 +240,11 @@ public class ContactListFragment extends OSGiFragment implements OnChildClickLis
 
         // Unbind search listener
         if (searchItem != null) {
+            /* lycoris
             SearchView searchView = (SearchView) searchItem.getActionView();
             searchView.setOnQueryTextListener(null);
             searchView.setOnCloseListener(null);
+            */
         }
 
         // Save scroll position

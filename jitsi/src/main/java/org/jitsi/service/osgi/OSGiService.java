@@ -14,6 +14,7 @@ import android.os.*;
 
 import org.jitsi.*;
 import org.jitsi.android.*;
+import org.jitsi.android.gui.chat.ChatSessionManager;
 import org.jitsi.android.gui.util.*;
 import org.jitsi.impl.osgi.*;
 
@@ -138,13 +139,18 @@ public class OSGiService extends Service {
      */
     private void showIcon() {
         //The intent to launch when the user clicks the expanded notification
-        PendingIntent pendIntent = JitsiApplication.getJitsiIconIntent();
+        // lycoris
+        //PendingIntent pendIntent = JitsiApplication.getJitsiIconIntent();
+        // -------------
+        //Intent intent = ChatSessionManager.getLastChatIntent();
+        //PendingIntent pendIntent = PendingIntent.getActivity(JitsiApplication.getGlobalContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        // -------------
 
         Resources res = getResources();
         String title = res.getString(R.string.module_name);
 
-        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this).setContentTitle(title).setWhen(System.currentTimeMillis()).setSmallIcon(R.mipmap.notificationicon);
-        nBuilder.setContentIntent(pendIntent);
+        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(this).setContentTitle(title).setWhen(System.currentTimeMillis()).setSmallIcon(R.drawable.ic_stat_logo_white);
+        //nBuilder.setContentIntent(pendIntent);
 
         Notification notice = nBuilder.build();
         notice.flags |= Notification.FLAG_NO_CLEAR;

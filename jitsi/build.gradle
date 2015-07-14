@@ -1,40 +1,33 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.model.library'
 
 version = "0.0.1"
 
-android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+model {
+    android {
+        compileSdkVersion = 22
+        buildToolsVersion = "23.0.0 rc3"
 
-    defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
-
-        // Enabling multidex support.
-        multiDexEnabled true
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        defaultConfig.with {
+            minSdkVersion.apiLevel = 15
+            targetSdkVersion.apiLevel = 22
+            versionCode = 1
+            versionName = "1.0"
         }
     }
 
-    dexOptions {
-        incremental true
+    android.buildTypes {
+        debug{
+            isMinifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
+        }
+        release {
+            isMinifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
+        }
     }
 
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
-    }
 
-    lintOptions {
-        abortOnError false
-    }
+
 }
 
 dependencies {
@@ -44,3 +37,68 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     compile "com.android.support:cardview-v7:22.2.0"
 }
+
+    /*
+    android.buildTypes {
+
+        debug {
+            isMinifyEnabled = false
+            proguardFiles += file('proguard-rules.pro')
+        }
+
+        release {
+            isMinifyEnabled = true
+            proguardFiles += file('proguard-rules.pro')
+        }
+    }*/
+
+    /*
+    android.dexOptions {
+        incremental = true
+    }
+    */
+
+    /*
+    android.packagingOptions {
+        exclude = 'META-INF/LICENSE.txt'
+        exclude = 'META-INF/NOTICE.txt'
+    }*/
+
+    //android.packagingOptions.excludes = ['META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+
+    /*
+    android.lintOptions {
+        abortOnError = false
+    }
+    */
+
+
+    /*
+    android.productFlavors {
+        create("flavor") {
+            applicationId = 'org.jitsi'
+        }
+    }*/
+
+    // Configures source set directory.
+    /*
+    android.sources {
+        main {
+            java {
+                source {
+                    srcDir 'src.main.java'
+                }
+            }
+        }
+    }
+    */
+
+
+/*
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}*/
+
+

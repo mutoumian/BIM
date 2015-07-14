@@ -1,9 +1,3 @@
-/*
- * Jitsi, the OpenSource Java VoIP and Instant Messaging client.
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
 package org.jitsi.android.gui.chat;
 
 import net.java.sip.communicator.service.contactlist.*;
@@ -77,9 +71,15 @@ public class ChatActivity extends OSGiActivity implements OnPageChangeListener {
         // If chat notification has been clicked and OSGi service
         // has been killed in the meantime then we have to start it and
         // restore this activity
+
+        /* lycoris
         if (postRestoreIntent()) {
             return;
         }
+        */
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(false);
 
         // Instantiate a ViewPager and a PagerAdapter.
         chatPager = (ViewPager) findViewById(R.id.chatPager);
@@ -156,10 +156,10 @@ public class ChatActivity extends OSGiActivity implements OnPageChangeListener {
         if (currentChatId == null) {
             logger.warn("Chat id can't be null - finishing ChatActivity");
             finish();
-            return;
         }
 
-        displaySelectedChatInfo();
+        // Lycoris
+        //displaySelectedChatInfo();
     }
 
     /**
@@ -266,12 +266,15 @@ public class ChatActivity extends OSGiActivity implements OnPageChangeListener {
             chatPagerAdapter.removeChatSession(selectedChat);
             if (chatPagerAdapter.getCount() <= 0) {
                 setCurrentChatId(null);
-                startActivity(JitsiApplication.getHomeIntent());
+                // lycoris
+                // startActivity(JitsiApplication.getHomeIntent());
             }
             else {
                 int pos = chatPager.getCurrentItem();
                 setCurrentChatId(chatPagerAdapter.getChatId(pos));
-                displaySelectedChatInfo();
+
+                //lycoris
+                //displaySelectedChatInfo();
             }
             return true;
         }
@@ -279,7 +282,12 @@ public class ChatActivity extends OSGiActivity implements OnPageChangeListener {
             setCurrentChatId(null);
             ChatSessionManager.removeAllActiveChats();
             chatPagerAdapter.removeAllChatSessions();
-            startActivity(JitsiApplication.getHomeIntent());
+            // lycoris
+            // startActivity(JitsiApplication.getHomeIntent());
+        }
+        else if(itemId == android.R.id.home){
+            onBackPressed();
+            return true;
         }
 
         /*
@@ -342,7 +350,9 @@ public class ChatActivity extends OSGiActivity implements OnPageChangeListener {
         // notifications fired when the page is scrolled
         if (lastSelectedIdx != pos) {
             setCurrentChatId(chatPagerAdapter.getChatId(pos));
-            displaySelectedChatInfo();
+
+            //lycoris
+            //displaySelectedChatInfo();
             lastSelectedIdx = pos;
         }
     }

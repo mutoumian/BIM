@@ -70,7 +70,7 @@ public class CallNotificationManager {
             throw new IllegalArgumentException("There's no call with id: " + callID);
         }
 
-        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(ctx).setWhen(System.currentTimeMillis()).setSmallIcon(R.mipmap.notificationicon);
+        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(ctx).setWhen(System.currentTimeMillis()).setSmallIcon(R.drawable.ic_stat_logo_white);
 
         RemoteViews contentView = new RemoteViews(ctx.getPackageName(), R.layout.status_bar_call);
 

@@ -22,6 +22,7 @@ import org.jitsi.android.*;
 import org.jitsi.android.gui.*;
 import org.jitsi.android.gui.chat.*;
 import org.jitsi.android.gui.settings.*;
+import org.jitsi.android.gui.settings.SettingsActivity;
 import org.jitsi.service.osgi.*;
 
 import java.net.*;

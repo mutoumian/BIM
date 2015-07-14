@@ -87,9 +87,12 @@ public class Jitsi extends MainMenuActivity {
         // Checks if OSGi has been started and if not starts
         // LauncherActivity which will restore this Activity
         // from it's Intent.
+
+        /* lycoris
         if (postRestoreIntent()) {
             return;
         }
+        */
 
         setContentView(R.layout.main_view);
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<string name="app_name">博图纵横即时通讯</string>-->
     <string name="system_title">博图纵横即时通讯</string>
+    <string name="module_name">博图纵横即时通讯</string>
     <string name="ACCOUNT_TYPE">org.jitsi.android.account</string>
     <string name="send_process_signal">Send Process Signal</string>
     <string name="stop_osgi_framework">Stop OSGi Framework</string>
@@ -1062,51 +1062,51 @@
         pref.key.video.media_codec_list
     </string>
     <string name="service_gui_settings_HW_ENCODE">
-        Use hardware encoding
+        使用硬件编码
     </string>
     <string name="pref_key_video_hw_encode">
         org.jitsi.impl.neomedia.android.hw_encode
     </string>
     <string name="service_gui_settings_DIRECT_SURFACE_ENCODE">
-        Use direct surface encoding (restart required)
+        使用直接表面编码 (需要重新启动)
     </string>
     <string name="pref_key_video_surface_encode">
         org.jitsi.impl.neomedia.android.surface_encode
     </string>
     <string name="service_gui_settings_HW_DECODE">
-        Use hardware decoding (restart required)
+        使用硬件解码 (需要重新启动)
     </string>
     <string name="pref_key_video_hw_decode">
         org.jitsi.impl.neomedia.android.hw_decode
     </string>
     <string name="service_gui_settings_DIRECT_SURFACE_DECODE">
-        Use direct surface decoding (restart required)
+        使用直接表面解码 (需要重新启动)
     </string>
     <string name="pref_key_video_surface_decode">
         org.jitsi.impl.neomedia.android.surface_decode
     </string>
     <!-- Video encodings -->
-    <string name="service_gui_settings_VIDEO_CODECS_TITLE">Video codecs</string>
-    <string name="service_gui_settings_VIDEO_CODECS_SUMMARY">Adjust video encodings</string>
+    <string name="service_gui_settings_VIDEO_CODECS_TITLE">视频解码器</string>
+    <string name="service_gui_settings_VIDEO_CODECS_SUMMARY">调整视频编码</string>
     <!-- Video resolution -->
     <string name="pref_key_video_resolution">pref.key.video.resolution</string>
-    <string name="service_gui_settings_VIDEO_RESOLUTION">Video resolution</string>
+    <string name="service_gui_settings_VIDEO_RESOLUTION">视频分辨率</string>
     <string name="service_gui_settings_AUTO_RESOLUTION">Auto</string>
     <!-- Frame rate -->
     <string name="pref_key_video_limit_fps">pref.key.video.limit_fps</string>
-    <string name="service_gui_settings_VIDEO_FRAME_RATE">Video frame rate</string>
-    <string name="service_gui_settings_LIMIT_FPS_OFF">Unlimited</string>
-    <string name="service_gui_settings_LIMIT_FPS_ON">Adjusted frame rate</string>
+    <string name="service_gui_settings_VIDEO_FRAME_RATE">视频帧率</string>
+    <string name="service_gui_settings_LIMIT_FPS_OFF">无限制</string>
+    <string name="service_gui_settings_LIMIT_FPS_ON">调整后的帧速率</string>
 
     <string name="pref_key_video_target_fps">pref.key.video.frame_rate</string>
-    <string name="service_gui_settings_VIDEO_TARGET_FPS">Target frame rate (per sec.)</string>
+    <string name="service_gui_settings_VIDEO_TARGET_FPS">目标帧率 (per sec.)</string>
     <string name="service_gui_settings_VIDEO_FPS_DESC">Values accepted between 5 and 30 fps</string>
 
     <string name="pref_key_video_max_bandwidth">pref.key.video.max_bandwidth</string>
     <string name="service_gui_settings_VIDEO_MAX_BANDWIDTH">RTP pacing threshold (kBytes/s)</string>
 
     <string name="pref_key_video_bitrate">pref.key.video.bitrate</string>
-    <string name="service_gui_settings_VIDEO_BITRATE">Video bitrate (kilobits/s)</string>
+    <string name="service_gui_settings_VIDEO_BITRATE">视频码率 (kilobits/s)</string>
 
     <!-- Security settings -->
     <string name="pref_cat_settings_security">pref.cat.settings.security</string>
@@ -1294,6 +1294,4 @@
     <string name="pref_key_provisioning_PASSWORD">net.java.sip.communicator.plugin.provisioning.auth</string>
     <string name="pref_key_provisioning_METHOD">net.java.sip.communicator.plugin.provisioning.METHOD</string>
     <string name="pref_key_provisioning_UUID">net.java.sip.communicator.UUID</string>
-
-    <string name="company_name">©2015 北京博图纵横科技有限责任公司</string>
 </resources>

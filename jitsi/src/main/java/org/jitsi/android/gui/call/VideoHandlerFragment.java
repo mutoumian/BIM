@@ -167,6 +167,57 @@ public class VideoHandlerFragment extends OSGiFragment {
         this.call = ((VideoCallActivity) activity).getCall();
 
         AndroidDecoder.renderSurfaceProvider = new PreviewSurfaceProvider((OSGiActivity) activity, remoteVideoContainer, false);
+
+        initReversalCamera(activity);
+    }
+
+    /**
+     * 初始化前后摄像头反转切换
+     */
+    private void initReversalCamera(Activity activity){
+        ImageButton reversalCameraButton = (ImageButton) activity.findViewById(R.id.reversal_camera);
+        reversalCameraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Ignore action if camera switching is in progress
+                if (cameraSwitchThread != null) return;
+
+                String back = getString(R.string.service_gui_settings_USE_BACK_CAMERA);
+                String front = getString(R.string.service_gui_settings_USE_FRONT_CAMERA);
+                String newTitle;
+
+                final AndroidCamera newDevice;
+
+                AndroidCamera currentCamera = AndroidCamera.getSelectedCameraDevInfo();
+                boolean isFrontCamera = currentCamera.getCameraFacing() == AndroidCamera.FACING_FRONT;
+
+                if (isFrontCamera) {
+                    // Switch to back camera
+                    newDevice = AndroidCamera.getCameraFromCurrentDeviceSystem(Camera.CameraInfo.CAMERA_FACING_BACK);
+                    // Set opposite title
+                    newTitle = front;
+                }
+                else {
+                    // Switch to front camera
+                    newDevice = AndroidCamera.getCameraFromCurrentDeviceSystem(Camera.CameraInfo.CAMERA_FACING_FRONT);
+                    // Set opposite title
+                    newTitle = back;
+                }
+
+                // Switch the camera in separate thread
+                cameraSwitchThread = new Thread() {
+                    @Override
+                    public void run() {
+                        AndroidCamera.setSelectedCamera(newDevice.getLocator());
+                        // Keep track of created threads
+                        cameraSwitchThread = null;
+                    }
+                };
+                cameraSwitchThread.start();
+
+            }
+        });
     }
 
     @Override
@@ -317,6 +368,8 @@ public class VideoHandlerFragment extends OSGiFragment {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
     /**
      * Called when local video button is pressed.

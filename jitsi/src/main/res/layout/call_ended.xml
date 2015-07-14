@@ -101,7 +101,7 @@
             android:layout_weight="1"
             android:background="@drawable/image_button_background"
             android:contentDescription="@string/service_gui_MUTE_BUTTON_TOOL_TIP"
-            android:src="@mipmap/callmicrophone" />
+            android:src="@mipmap/callmicrophone2" />
 
         <ImageButton
             android:id="@+id/callVideoButton"

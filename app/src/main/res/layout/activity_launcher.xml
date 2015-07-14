@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_material_light"
+    android:background="@color/greyLight"
     android:orientation="vertical">
 
     <ImageView
@@ -34,6 +34,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"
-        android:text="@string/company_name" />
+        android:text="@string/company_name"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>

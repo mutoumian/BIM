@@ -6,29 +6,32 @@
  */
 package org.jitsi.android;
 
-import android.app.*;
-import android.content.*;
-import android.content.res.*;
-
-import android.hardware.*;
-import android.media.*;
-import android.os.*;
+import android.app.Activity;
+import android.app.DownloadManager;
+import android.app.LauncherActivity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.hardware.SensorManager;
+import android.media.AudioManager;
+import android.os.PowerManager;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.util.*;
+import net.java.sip.communicator.service.protocol.AccountManager;
+import net.java.sip.communicator.util.Logger;
+import net.java.sip.communicator.util.ServiceUtils;
 
-import org.jitsi.*;
-import org.jitsi.android.gui.*;
-import org.jitsi.android.gui.LauncherActivity;
-import org.jitsi.android.gui.account.*;
-import org.jitsi.android.gui.chat.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.service.configuration.*;
-import org.jitsi.service.log.*;
-import org.jitsi.service.osgi.*;
-import org.osgi.framework.*;
+import org.jitsi.android.gui.AndroidGUIActivator;
+import org.jitsi.android.gui.account.AccountLoginActivity;
+import org.jitsi.android.gui.chat.ChatSessionManager;
+import org.jitsi.android.gui.util.DrawableCache;
+import org.jitsi.service.configuration.ConfigurationService;
+import org.jitsi.service.log.LogUploadService;
+import org.jitsi.service.osgi.OSGiService;
+import org.osgi.framework.BundleContext;
 
 /**
  * <tt>JitsiApplication</tt> is used, as a global context and utility class for
@@ -222,6 +225,7 @@ public class JitsiApplication extends MultiDexApplication {
      *
      * @return Returns home <tt>Activity</tt> class.
      */
+    /* lycoris
     public static Class<?> getHomeScreenActivityClass() {
         BundleContext osgiContext = AndroidGUIActivator.bundleContext;
         if (osgiContext == null) {
@@ -242,15 +246,19 @@ public class JitsiApplication extends MultiDexApplication {
         }
         else {
             // Start main view
-            return Jitsi.class;
+            //return Jitsi.class;
+            return MainActivity.class;
+            //return AccountLoginActivity.class;
         }
     }
+    */
 
     /**
      * Creates the home <tt>Activity</tt> <tt>Intent</tt>.
      *
      * @return the home <tt>Activity</tt> <tt>Intent</tt>.
      */
+    /*
     public static Intent getHomeIntent() {
         Intent homeIntent = new Intent(instance, getHomeScreenActivityClass());
         // Home is singleTask anyway, but this way it can be started from
@@ -258,6 +266,7 @@ public class JitsiApplication extends MultiDexApplication {
         homeIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         return homeIntent;
     }
+    */
 
     /**
      * Creates pending <tt>Intent</tt> to be started, when Jitsi icon is
@@ -266,6 +275,8 @@ public class JitsiApplication extends MultiDexApplication {
      * @return new pending <tt>Intent</tt> to be started, when Jitsi icon is
      * clicked.
      */
+
+    /* lycoris
     public static PendingIntent getJitsiIconIntent() {
         Intent intent = ChatSessionManager.getLastChatIntent();
 
@@ -275,6 +286,7 @@ public class JitsiApplication extends MultiDexApplication {
 
         return PendingIntent.getActivity(getGlobalContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
+    */
 
     /**
      * Returns <tt>ConfigurationService</tt> instance.
@@ -355,10 +367,13 @@ public class JitsiApplication extends MultiDexApplication {
      *
      * @return <tt>true</tt> if the home <tt>Activity</tt> is currently active.
      */
+
+    /* lycoris
     public static boolean isHomeActivityActive() {
         return currentActivity != null && currentActivity.getClass().equals(getHomeScreenActivityClass());
 
     }
+    */
 
     /**
      * Displays the send logs dialog.
@@ -368,7 +383,7 @@ public class JitsiApplication extends MultiDexApplication {
 
         String defaultEmail = getConfig().getString("org.jitsi.android.LOG_REPORT_EMAIL");
 
-        logUpload.sendLogs(new String[]{defaultEmail}, getResString(R.string.service_gui_SEND_LOGS_SUBJECT), getResString(R.string.service_gui_SEND_LOGS_TITLE));
+        logUpload.sendLogs(new String[]{defaultEmail}, getResString(org.jitsi.R.string.service_gui_SEND_LOGS_SUBJECT), getResString(org.jitsi.R.string.service_gui_SEND_LOGS_TITLE));
     }
 
     @Override

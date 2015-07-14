@@ -155,7 +155,7 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
 
         callConference = call.getConference();
 
-        initReversalCamera();
+
         initSpeakerphoneButton();
         initMicrophoneView();
         initHangupView();
@@ -196,10 +196,10 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
              */
             /**
              * Adds fragment that turns on and off the screen when proximity sensor detects FAR/NEAR distance.
-
+             */
             getSupportFragmentManager().beginTransaction().add(volControl, VOLUME_CTRL_TAG).add(new ProximitySensorFragment(), PROXIMITY_FRAGMENT_TAG)
              .add(videoFragment, VIDEO_FRAGMENT_TAG).add(new CallTimerFragment(), TIMER_FRAGMENT_TAG).commit();
-             */
+
                     /* Adds the fragment that handles video display logic */
                     /* Adds the fragment that handles call duration logic */
         }
@@ -226,20 +226,7 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
             sasToastController.onRestoreInstanceState(savedInstanceState);
     }
 
-    /**
-     * 初始化前后摄像头反转切换
-     */
-    private void initReversalCamera(){
-        ImageButton reversalCameraButton = (ImageButton) findViewById(R.id.reversal_camera);
-        reversalCameraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-
-
-            }
-        });
-    }
 
     /**
      * Initializes the hangup button view.
@@ -327,16 +314,17 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
                 });
     }
 
+    // 更换麦克风图标
     private void doUpdateMuteStatus() {
         final ImageView microphoneButton = (ImageView) findViewById(R.id.callMicrophoneButton);
 
         if (isMuted()) {
             microphoneButton.setBackgroundColor(0x50000000);
-            microphoneButton.setImageResource(R.mipmap.callmicrophonemute);
+            microphoneButton.setImageResource(R.mipmap.ic_call_microphone);
         }
         else {
             microphoneButton.setBackgroundColor(Color.TRANSPARENT);
-            microphoneButton.setImageResource(R.mipmap.callmicrophone);
+            microphoneButton.setImageResource(R.mipmap.ic_call_microphone);
         }
     }
 
@@ -509,12 +497,14 @@ public class VideoCallActivity extends OSGiActivity implements CallPeerRenderer,
 
         callState.callPeerName = name;
 
+        /* lycoris
         runOnUiThread(new Runnable() {
             public void run() {
                 ActionBarUtil.setTitle(VideoCallActivity.this, getResources().getString(R.string.service_gui_CALL_WITH) + ": ");
                 ActionBarUtil.setSubtitle(VideoCallActivity.this, name);
             }
         });
+        */
     }
 
     /**

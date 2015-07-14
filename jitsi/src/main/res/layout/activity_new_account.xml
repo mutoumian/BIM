@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="@dimen/screen_padding"
+    android:gravity="center"
     android:layout_centerHorizontal="true"
-    android:gravity="center_vertical"
     android:orientation="vertical"
     android:background="@mipmap/loginbackground">
 
@@ -13,7 +13,8 @@
         android:layout_height="@dimen/item_height"
         android:text="@string/system_title"
         android:layout_gravity="center"
-        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
         android:textSize="@dimen/system_title_text_size" />
 
     <!--
@@ -55,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/item_height"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/between_padding" />
+        android:layout_marginBottom="@dimen/between_padding"
+        android:background="@drawable/signin_button"/>
 
 </LinearLayout>

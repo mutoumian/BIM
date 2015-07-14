@@ -132,9 +132,11 @@ public class AndroidUtils {
             return;
         }
 
-        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(context).setContentTitle(title).setContentText(message).setWhen(date).setSmallIcon(R.mipmap.notificationicon);
+        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(context).setContentTitle(title).setContentText(message).setWhen(date).setSmallIcon(R.drawable.ic_stat_logo_white);
 
-        nBuilder.setContentIntent(JitsiApplication.getJitsiIconIntent());
+        // lycoris
+        //nBuilder.setContentIntent(JitsiApplication.getJitsiIconIntent());
+
         NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
         Notification notification = nBuilder.build();

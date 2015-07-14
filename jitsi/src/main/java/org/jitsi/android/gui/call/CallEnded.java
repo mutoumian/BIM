@@ -39,7 +39,8 @@ public class CallEnded extends OSGiFragment {
             public void onClick(View v) {
                 Context ctx = getActivity();
                 getActivity().finish();
-                ctx.startActivity(JitsiApplication.getHomeIntent());
+                // lycoris
+                // ctx.startActivity(JitsiApplication.getHomeIntent());
             }
         });
 

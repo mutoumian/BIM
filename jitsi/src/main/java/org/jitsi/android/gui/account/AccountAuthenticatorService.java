@@ -116,12 +116,9 @@ public class AccountAuthenticatorService extends Service {
         /**
          * Checks that the user knows the credentials of an account.
          *
-         * @param response to send the result back to the AccountManager, will
-         *                 never be null
-         * @param account  the account whose credentials are to be checked, will
-         *                 never be null
-         * @param options  a Bundle of authenticator-specific options, may be
-         *                 null
+         * @param response to send the result back to the AccountManager, will never be null
+         * @param account  the account whose credentials are to be checked, will never be null
+         * @param options  a Bundle of authenticator-specific options, may be null
          */
         @Override
         public Bundle confirmCredentials(AccountAuthenticatorResponse response, Account account, Bundle options) {
@@ -147,14 +144,10 @@ public class AccountAuthenticatorService extends Service {
         /**
          * Gets the authtoken for an account.
          *
-         * @param response      to send the result back to the AccountManager, will
-         *                      never be null
-         * @param account       the account whose credentials are to be retrieved,
-         *                      will never be null
-         * @param authTokenType the type of auth token to retrieve, will never
-         *                      be null
-         * @param options       a Bundle of authenticator-specific options,
-         *                      may be null
+         * @param response      to send the result back to the AccountManager, will never be null
+         * @param account       the account whose credentials are to be retrieved, will never be null
+         * @param authTokenType the type of auth token to retrieve, will never be null
+         * @param options       a Bundle of authenticator-specific options, may be null
          */
         @Override
         public Bundle getAuthToken(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options) throws NetworkErrorException {
@@ -162,11 +155,9 @@ public class AccountAuthenticatorService extends Service {
         }
 
         /**
-         * Ask the authenticator for a localized label for the given
-         * authTokenType.
+         * Ask the authenticator for a localized label for the given authTokenType.
          *
-         * @param authTokenType the authTokenType whose label is to be returned,
-         *                      will never be null
+         * @param authTokenType the authTokenType whose label is to be returned, will never be null
          */
         @Override
         public String getAuthTokenLabel(String authTokenType) {
@@ -177,8 +168,7 @@ public class AccountAuthenticatorService extends Service {
          * Checks if the account supports all the specified authenticator
          * specific features.
          *
-         * @param response to send the result back to the AccountManager, will
-         *                 never be null
+         * @param response to send the result back to the AccountManager, will never be null
          * @param account  the account to check, will never be null
          * @param features an array of features to check, will never be null
          */
@@ -190,14 +180,10 @@ public class AccountAuthenticatorService extends Service {
         /**
          * Update the locally stored credentials for an account.
          *
-         * @param response      to send the result back to the AccountManager, will
-         *                      never be null
-         * @param account       the account whose credentials are to be updated, will
-         *                      never be null
-         * @param authTokenType the type of auth token to retrieve after
-         *                      updating the credentials, may be null
-         * @param options       a Bundle of authenticator-specific options,
-         *                      may be null
+         * @param response      to send the result back to the AccountManager, will never be null
+         * @param account       the account whose credentials are to be updated, will never be null
+         * @param authTokenType the type of auth token to retrieve after updating the credentials, may be null
+         * @param options       a Bundle of authenticator-specific options, may be null
          */
         @Override
         public Bundle updateCredentials(AccountAuthenticatorResponse response, Account account, String authTokenType, Bundle options) {

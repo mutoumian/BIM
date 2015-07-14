@@ -77,14 +77,13 @@ public class AccountLoginFragment extends OSGiFragment {
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View content = inflater.inflate(R.layout.new_account, container, false);
+        View content = inflater.inflate(R.layout.activity_new_account, container, false);
 
-        Spinner spinner = (Spinner) content.findViewById(R.id.networkSpinner);
+        //Spinner spinner = (Spinner) content.findViewById(R.id.networkSpinner);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.networks_array, R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(R.layout.dropdown_spinner_item);
-
-        spinner.setAdapter(adapter);
+        //ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.networks_array, R.layout.simple_spinner_item);
+        //adapter.setDropDownViewResource(R.layout.dropdown_spinner_item);
+        //spinner.setAdapter(adapter);
 
         initSignInButton(content);
 
@@ -115,15 +114,18 @@ public class AccountLoginFragment extends OSGiFragment {
 
         signInButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                final Spinner spinner = (Spinner) content.findViewById(R.id.networkSpinner);
+                //final Spinner spinner = (Spinner) content.findViewById(R.id.networkSpinner);
                 final EditText userNameField = (EditText) content.findViewById(R.id.usernameField);
                 final EditText passwordField = (EditText) content.findViewById(R.id.passwordField);
 
                 // Translate network label to network value
-                String[] networkValues = getResources().getStringArray(R.array.networks_array_values);
-                String selectedNetwork = networkValues[spinner.getSelectedItemPosition()];
+                //String[] networkValues = getResources().getStringArray(R.array.networks_array_values);
+                //String selectedNetwork = networkValues[spinner.getSelectedItemPosition()];
 
-                String login = userNameField.getText().toString();
+                // 默认设置为 XMPP 协议
+                String selectedNetwork = "Jabber";
+
+                String login = userNameField.getText().toString() + "@219.139.130.104";
                 String password = passwordField.getText().toString();
 
                 loginListener.onLoginPerformed(login, password, selectedNetwork);
@@ -132,11 +134,9 @@ public class AccountLoginFragment extends OSGiFragment {
     }
 
     /**
-     * Stores the given <tt>protocolProvider</tt> data in the android system
-     * accounts.
+     * Stores the given protocolProvider data in the android system accounts.
      *
-     * @param protocolProvider the <tt>ProtocolProviderService</tt>,
-     *                         corresponding to the account to store
+     * @param protocolProvider the ProtocolProviderService, corresponding to the account to store
      */
     private void storeAndroidAccount(ProtocolProviderService protocolProvider) {
         Map<String, String> accountProps = protocolProvider.getAccountID().getAccountProperties();
@@ -163,7 +163,9 @@ public class AccountLoginFragment extends OSGiFragment {
                 result.putString(AccountManager.KEY_ACCOUNT_TYPE, getString(R.string.ACCOUNT_TYPE));
                 result.putAll(extraData);
 
-                response.onResult(result);
+                if (response != null) {
+                    response.onResult(result);
+                }
             }
             // TODO: notify about account authentication
             //finish();

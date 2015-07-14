@@ -19,6 +19,7 @@ import org.jitsi.android.gui.*;
 import org.jitsi.android.gui.account.*;
 import org.jitsi.android.gui.contactlist.*;
 import org.jitsi.android.gui.settings.*;
+import org.jitsi.android.gui.settings.SettingsActivity;
 
 import android.os.*;
 import android.view.*;
@@ -55,7 +56,8 @@ public class MainMenuActivity extends ExitMenuActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
+        // lycoris
+        //inflater.inflate(R.menu.main_menu, menu);
 
         // Adds exit option from super class
         super.onCreateOptionsMenu(menu);

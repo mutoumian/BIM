@@ -49,10 +49,14 @@ public class ShutdownActivity extends Activity {
             }
         }
 
-        setProgressBarIndeterminateVisibility(true);
 
-        setContentView(R.layout.main);
+        // lycoris
+        finish();
 
-        ((TextView) findViewById(R.id.restoring)).setText(R.string.service_gui_SHUTDOWN_IN_PROGRESS);
+        //setProgressBarIndeterminateVisibility(true);
+
+        //setContentView(R.layout.activity_launcher);
+
+        //((TextView) findViewById(R.id.restoring)).setText(R.string.service_gui_SHUTDOWN_IN_PROGRESS);
     }
 }

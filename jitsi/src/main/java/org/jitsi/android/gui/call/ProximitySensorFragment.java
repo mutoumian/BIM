@@ -116,7 +116,8 @@ public class ProximitySensorFragment extends Fragment implements SensorEventList
             screenOn();
         }
         else {
-            screenOff();
+            //screenOff();
+            screenOn();
         }
     }
 

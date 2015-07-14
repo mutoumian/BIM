@@ -9,7 +9,7 @@
         android:id="@+id/callSearchLayout"
         android:layout_width="fill_parent"
         android:layout_height="10dp"
-        android:visibility="invisible">
+        android:visibility="gone">
 
         <LinearLayout
             android:orientation="horizontal"

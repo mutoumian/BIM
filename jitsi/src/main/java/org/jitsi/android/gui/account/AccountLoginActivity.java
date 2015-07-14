@@ -1,9 +1,3 @@
-/*
- * Jitsi, the OpenSource Java VoIP and Instant Messaging client.
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
 package org.jitsi.android.gui.account;
 
 import android.content.*;
@@ -75,7 +69,7 @@ public class AccountLoginActivity extends ExitMenuActivity implements AccountLog
     private ProtocolProviderService signIn(String userName, String password, String protocolName) {
         BundleContext bundleContext = getBundlecontext();
 
-        Logger logger = Logger.getLogger(Jitsi.class);
+        Logger logger = Logger.getLogger(AccountLoginActivity.class);
 
         ServiceReference<?>[] accountWizardRefs = null;
         try {
@@ -138,6 +132,7 @@ public class AccountLoginActivity extends ExitMenuActivity implements AccountLog
     }
 
     /**
+     * 用户名、密码验证完成调度，加载好友列表
      *
      */
     @Override
